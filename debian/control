@@ -1,0 +1,24 @@
+Source: kcm-ufw
+Section: kde
+Priority: optional
+Maintainer: Shawn Sörbom <shawn@sorbom.com>
+Build-Depends: debhelper (>= 9), cmake, kdelibs5-dev, python-ufw
+Standards-Version: 3.9.5
+Homepage: http://kde-apps.org/content/show.php?content=137789&forumpage=0&PHPSESSID=adebf8e881b4b44471d506320a7606a9
+#Vcs-Git: git://anonscm.debian.org/collab-maint/kcm-ufw.git
+#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/kcm-ufw.git;a=summary
+
+Package: kcm-ufw
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ufw, python, python-ufw, kdelibs-bin
+Description: KDE Control Center module for the Uncomplicated Firewall
+ This is a KDE control center module to configure and control the 
+ Uncomplicated Firewall. The following features are supported:  
+ 1. Enable/disable firewall
+ 2. Configure firewall default settings
+ 3. Add, edit, and remove rules
+ 4. Re-order rules via drag\'n\'drop
+ 5. Import/export of rules
+ 6. Setting of some IP tables modules 
+ The module will appear under "Network and Connectivty" category.
+

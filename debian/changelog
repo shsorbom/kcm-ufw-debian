@@ -1,0 +1,5 @@
+kcm-ufw (0.4.3-1) unstable; urgency=low
+
+  * Initial release. (Closes: #761599)
+
+ -- Shawn Sörbom <shawn@sorbom.com>  Sun, 14 Sep 2014 14:50:50 -0700
