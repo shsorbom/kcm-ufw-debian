@@ -1,1 +1,2 @@
+# Lintian repots broken symlink, but this does not appear to effect package functioning
 kcm-ufw binary: package-contains-broken-symlink 

@@ -1,3 +1,14 @@
+kcm-ufw (0.4.3-2) unstable; urgency=low
+
+  * Fix various debian/control file issues
+  * Fix debian/watchfile
+  * add lintian-override to fix "broken symlink" warnings
+  * improve debian/rules file
+  * update debian/copyright file to include other contributors
+  * add patch to fix spelling error in kcm binary  
+
+ -- Shawn Sörbom <shawn@sorbom.com>  Fri, 26 Sep 2014 11:27:40 -0700
+
 kcm-ufw (0.4.3-1) unstable; urgency=low
 
   * Initial release. (Closes: #761599)
