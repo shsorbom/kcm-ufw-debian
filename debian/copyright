@@ -1,17 +1,10 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: kcm-ufw
-Source: http://kde-apps.org/content/show.php?content=137789
+Source: http://kde-apps.org/content/show.php/UFW+KControl+Module?content=137789
+
 Files: *
 Copyright: 2011-2014 Craig Drummond <craig.p.drummond@gmail.com>
 License: GPL-3.0+
-
-Files: helper/kcm_ufw_helper.py.cmake
-Copyright: 2010  Darwin M. Bautista <djclue917@gmail.com>
-License: GPL-3.0+
-
-Files: docs/en/index.docbook, docs/es/index.docbook
-Copyright: Christian Hubinger, 2002-2005
-License: GFDL
 
 Files: debian/*
 Copyright: 2014 Shawn Sörbom <shawn@sorbom.com>
