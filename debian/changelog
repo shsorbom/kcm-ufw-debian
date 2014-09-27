@@ -1,3 +1,9 @@
+kcm-ufw (0.4.3-3) unstable; urgency=low
+
+  * Add patch to fix "About" dialogue in kcm-ufw
+
+ -- Shawn Sörbom <shawn@sorbom.com>  Sat, 27 Sep 2014 00:07:50 -0700
+
 kcm-ufw (0.4.3-2) unstable; urgency=low
 
   * Fix various debian/control file issues
