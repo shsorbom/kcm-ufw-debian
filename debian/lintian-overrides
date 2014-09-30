@@ -1,2 +1,2 @@
-# Lintian repots broken symlink, but this does not appear to effect package functioning
-kcm-ufw binary: package-contains-broken-symlink 
+# Lintian repots broken symlink, this is caused by the kdelibs-bin dependency
+kcm-ufw binary: package-contains-broken-symlink
