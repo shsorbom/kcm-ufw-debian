@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9), cmake, kdelibs5-dev, python-ufw
 Standards-Version: 3.9.5
 Homepage: http://kde-apps.org/content/show.php?content=137789
 Vcs-Git: git://github.com:shsorbom/kcm-ufw-debian.git
-Vcs-Browser: https://github.com/shsorbom/kcm-ufw-debian.git
+Vcs-Browser: https://github.com/shsorbom/kcm-ufw-debian
 
 Package: kcm-ufw
 Architecture: any
@@ -21,7 +21,6 @@ Description: KDE Control Center module for the Uncomplicated Firewall
   - Add, edit, and remove rules;
   - Re-order rules via drag'n'drop;
   - Import/export of rules;
-  - Setting of some IP tables modules;
+  - Setting of some IP tables modules.
  .
  The module will appear under the "Network and Connectivity" category.
-
