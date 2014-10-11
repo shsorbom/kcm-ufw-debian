@@ -5,7 +5,7 @@ Maintainer: Shawn Sörbom <shawn@sorbom.com>
 Build-Depends: debhelper (>= 9), cmake, kdelibs5-dev, python-ufw
 Standards-Version: 3.9.5
 Homepage: http://kde-apps.org/content/show.php?content=137789
-Vcs-Git: git@github.com:shsorbom/kcm-ufw-debian.git
+Vcs-Git: https://github.com/shsorbom/kcm-ufw-debian.git
 Vcs-Browser: https://github.com/shsorbom/kcm-ufw-debian
 
 Package: kcm-ufw
