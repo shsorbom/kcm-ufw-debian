@@ -7,19 +7,19 @@ Copyright: 2011-2014 Craig Drummond <craig.p.drummond@gmail.com>
 License: GPL-3.0+
 
 Files: kcm/*.h kcm/*.cpp helper/helper.h helper/helper.cpp
-Copyright: 2011-2014 Craig Drummond <craig.p.drummond@gmail.com>
+Copyright: 2011 Craig Drummond <craig.p.drummond@gmail.com>
 License: GPL-2.0+
 
 Files: helper/kcm_ufw_helper.py.cmake
-Copyright: 2010  Darwin M. Bautista <djclue917@gmail.com> Craig Drummond <craig.p.drummond@gmail.com>
+Copyright: 2010  Darwin M. Bautista <djclue917@gmail.com>
 License: GPL-3.0+
 
 Files: po/es.po
-Copyright: 2011 Kubuntu-es.org Language-Team: Spanish <kde-i18n-doc@kde.org>
+Copyright: 2011 Kubuntu-es.org <kde-i18n-doc@kde.org>
 License: GPL-3.0+
 
 Files: po/fr.po
-Copyright: 2011 Sergio Guibert Kubuntu-fr.org Language-Team: Français <kde-i18n-doc@kde.org>
+Copyright: 2011 Sergio Guibert Kubuntu-fr.org <kde-i18n-doc@kde.org>
 License: GPL-3.0+
 
 Files: po/lt.po
@@ -31,7 +31,8 @@ Copyright: 2014 Shawn Sörbom <shawn@sorbom.com>
 License: GPL-3.0+
 
 Files: docs/en/index.docbook docs/es/index.docbook
-Copyright: Christian Hubinger, 2002-2005
+Copyright: 2002-2005 Christian Hubinger 
+	   2011 Craig Drummond <craig.p.drummond@gmail.com>, 
 License: GFDL-1.2
 
 License: GPL-2.0+
