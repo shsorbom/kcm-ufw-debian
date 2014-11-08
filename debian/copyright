@@ -12,6 +12,7 @@ License: GPL-2.0+
 
 Files: helper/kcm_ufw_helper.py.cmake
 Copyright: 2010  Darwin M. Bautista <djclue917@gmail.com>
+	   2011 Craig Drummond <craig.p.drummond@gmail.com> 
 License: GPL-3.0+
 
 Files: po/es.po
@@ -32,7 +33,7 @@ License: GPL-3.0+
 
 Files: docs/en/index.docbook docs/es/index.docbook
 Copyright: 2002-2005 Christian Hubinger 
-	   2011 Craig Drummond <craig.p.drummond@gmail.com>, 
+	   2011 Craig Drummond <craig.p.drummond@gmail.com> 
 License: GFDL-1.2
 
 License: GPL-2.0+
