@@ -266,6 +266,19 @@ void Kcm::editRule(Rule rule)
     }
 }
 
+<<<<<<< HEAD
+void Kcm::editRuleDescr(const Rule &rule)
+{
+    QVariantMap args;
+    args["cmd"]="editRuleDescr";
+    args["xml"]=rule.toXml();
+    modifyAction.setArguments(args);
+    statusLabel->setText(i18n("Updating rule..."));
+    emit status(statusLabel->fullText());
+    blocker->setActive(true);
+    modifyAction.execute();
+}
+=======
 // void Kcm::editRuleDescr(const Rule &rule)
 // {
 //     QVariantMap args;
@@ -277,6 +290,7 @@ void Kcm::editRule(Rule rule)
 //     blocker->setActive(true);
 //     modifyAction.execute();
 // }
+>>>>>>> 8f8c2f4b9916ccc4e68adf3677ebf93b68493360
 
 void Kcm::defaults()
 {
@@ -377,9 +391,15 @@ void Kcm::removeRule()
     {
         QVariantMap args;
         args["cmd"]="removeRule";
+<<<<<<< HEAD
+        args["index"]=QString().setNum((unsigned int)item->data(0, Qt::UserRole).toUInt())+
+                      QChar(':')+
+                      currentRules.at((unsigned int)item->data(0, Qt::UserRole).toUInt()-1).getHash();
+=======
         args["index"]=QString().setNum((unsigned int)item->data(0, Qt::UserRole).toUInt())/*+
                       QChar(':')+
                       currentRules.at((unsigned int)item->data(0, Qt::UserRole).toUInt()-1).getHash()*/;
+>>>>>>> 8f8c2f4b9916ccc4e68adf3677ebf93b68493360
         modifyAction.setArguments(args);
         statusLabel->setText(i18n("Removing rule from firewall..."));
         blocker->setActive(true);
@@ -425,7 +445,11 @@ void Kcm::setDefaultIncomingPolicy()
     args["cmd"]="setDefaults";
     args["xml"]=QString("<defaults incoming=\"")+toString((Types::Policy)defaultIncomingPolicy->currentIndex())+QString("\" />");
     modifyAction.setArguments(args);
+<<<<<<< HEAD
+    statusLabel->setText(i18n("Setting firewall default incomming policy..."));
+=======
     statusLabel->setText(i18n("Setting firewall default incoming policy..."));
+>>>>>>> 8f8c2f4b9916ccc4e68adf3677ebf93b68493360
     blocker->setActive(true);
     modifyAction.execute();
 }
@@ -1211,7 +1235,11 @@ void Kcm::addModules()
     {
         headerItem->setToolTip(MOD_COL_CONN_TRACK,
                                i18n("<p><i>Connection tracking</i> is the ability to maintain connection state "
+<<<<<<< HEAD
+                                    "information (such as source and destination address/port, protocol, etc.)  "
+=======
                                     "information (such as source and destination address/port, protocol, etc.) "
+>>>>>>> 8f8c2f4b9916ccc4e68adf3677ebf93b68493360
                                     "in memory.</p>"
                                     "<p>Using these modules makes the firewall more secure.</p>"));
 

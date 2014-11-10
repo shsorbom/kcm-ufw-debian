@@ -143,8 +143,13 @@ ActionReply Helper::modify(const QVariantMap &args)
         return moveRule(args, cmd);
     else if("editRule"==cmd)
         return editRule(args, cmd);
+<<<<<<< HEAD
+    else if("editRuleDescr"==cmd)
+        return editRuleDescr(args, cmd);
+=======
 //     else if("editRuleDescr"==cmd)
 //         return editRuleDescr(args, cmd);
+>>>>>>> 8f8c2f4b9916ccc4e68adf3677ebf93b68493360
     else if("reset"==cmd)
         return reset(cmd);
     else if("setDefaults"==cmd)
@@ -321,12 +326,21 @@ ActionReply Helper::editRule(const QVariantMap &args, const QString &cmd)
                QStringList() << "--list", cmd);
 }
 
+<<<<<<< HEAD
+ActionReply Helper::editRuleDescr(const QVariantMap &args, const QString &cmd)
+{
+    checkFolder();
+    return run(QStringList() << "--updateDescr="+args["xml"].toString(),
+               QStringList() << "--list", cmd);
+}
+=======
 // ActionReply Helper::editRuleDescr(const QVariantMap &args, const QString &cmd)
 // {
 //     checkFolder();
 //     return run(QStringList() << "--updateDescr="+args["xml"].toString(),
 //                QStringList() << "--list", cmd);
 // }
+>>>>>>> 8f8c2f4b9916ccc4e68adf3677ebf93b68493360
 
 ActionReply Helper::reset(const QString &cmd)
 {
