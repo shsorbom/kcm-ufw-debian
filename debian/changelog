@@ -1,8 +1,11 @@
-kcm-ufw (0.4.3-2) experimental; urgency=medium
+kde-config-ufw (0.4.3-2) experimental; urgency=medium
 
-  * fix improper compression of documentation
+  * Fix improper compression of documentation
+  * Rename package to kde-config-ufw
+  * Update homepage field in control file
+  
 
- -- Shawn Sörbom <shawn@sorbom.com>  Wed, 17 Dec 2014 18:33:01 -0800
+ -- Shawn Sörbom <shawn@sorbom.com>  Sat, 07 Mar 2015 15:04:21 -0800
 
 kcm-ufw (0.4.3-1) experimental; urgency=low
 

@@ -1,14 +1,16 @@
-Source: kcm-ufw
+Source: kde-config-ufw
 Section: kde
 Priority: optional
 Maintainer: Shawn Sörbom <shawn@sorbom.com>
 Build-Depends: debhelper (>= 9), cmake, kdelibs5-dev, python-ufw
 Standards-Version: 3.9.6
-Homepage: http://kde-apps.org/content/show.php?content=137789
+Homepage: https://projects.kde.org/projects/playground/sysadmin/ufw-kde
 Vcs-Git: https://github.com/shsorbom/kcm-ufw-debian.git
 Vcs-Browser: https://github.com/shsorbom/kcm-ufw-debian
 
-Package: kcm-ufw
+Package: kde-config-ufw
+Replaces: kcm-ufw (<< 0.4.3-2~)
+Breaks: kcm-ufw (<< 0.4.3-2~)
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, ufw, python, python-ufw, kdelibs-bin
 Description: KDE Control Center module for the Uncomplicated Firewall
@@ -24,3 +26,11 @@ Description: KDE Control Center module for the Uncomplicated Firewall
   - Setting of some IP tables modules.
  .
  The module will appear under the "Network and Connectivity" category.
+
+Package: kcm-ufw
+Depends: kde-config-ufw, ${misc:Depends}
+Architecture: all
+Priority: extra
+Section: oldlibs
+Description: transitional dummy package
+  This is a transitional dummy package. It can safely be removed.
