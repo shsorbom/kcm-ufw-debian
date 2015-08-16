@@ -28,7 +28,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
              Widgets
              Core
-             #DBus
+             DBus
 )
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
              Auth
@@ -39,7 +39,6 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
              KIO
              WidgetsAddons
              KCMUtils
-             
              #docTools
              )
 include(KDEInstallDirs)
@@ -50,7 +49,7 @@ include(CheckIncludeFiles)
 
 configure_file(config.h.cmake ${CMAKE_BINARY_DIR}/config.h)
 
-#add_subdirectory( helper )
+add_subdirectory( helper )
 add_subdirectory( kcm )
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
