@@ -1,5 +1,9 @@
 project(kcm_ufw)
-cmake_minimum_required(VERSION 2.6.0)
+cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
+set(QT_MIN_VERSION "5.2.0")
+set(KF5_MIN_VERSION "5.1.0")
+
+
 
 set(CPACK_PACKAGE_DESCRIPTION_FILE "${CMAKE_CURRENT_SOURCE_DIR}/README")
 set(CPACK_GENERATOR "DEB;RPM;TGZ")
@@ -16,11 +20,40 @@ set(CPACK_SOURCE_PACKAGE_FILE_NAME "${CMAKE_PROJECT_NAME}-${KCM_UFW_VERSION_FULL
 set(CPACK_PACKAGE_FILE_NAME "${CMAKE_PROJECT_NAME}-${KCM_UFW_VERSION_FULL}")
 include(CPack)
 
-find_package(KDE4 REQUIRED)
+find_package(ECM 1.1.0 REQUIRED NO_MODULE)
+set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
+find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
+             Widgets
+             Core
+             #DBus
+)
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
+             Auth
+             ConfigWidgets
+             CoreAddons
+#             Crash
+             I18n
+             KIO
+             WidgetsAddons
+             KCMUtils
+             
+             #docTools
+             )
+include(KDEInstallDirs)
+include(KDECompilerSettings)
+include(KDECMakeSettings)
+include(FeatureSummary)
+include(CheckIncludeFiles)
+
 configure_file(config.h.cmake ${CMAKE_BINARY_DIR}/config.h)
 
-add_subdirectory( helper )
+#add_subdirectory( helper )
 add_subdirectory( kcm )
+
+feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 if (NOT UFW_TRANSLATIONS)
     set(UFW_TRANSLATIONS "all")
@@ -43,7 +76,7 @@ foreach(trans ${UFW_TRANSLATIONS})
     endif (trans STREQUAL "all")
 endforeach(trans ${UFW_TRANSLATIONS})
 
-add_subdirectory( docs )
+#add_subdirectory( docs )
 add_subdirectory( po )
 
 #kde4_install_icons( ${ICON_INSTALL_DIR} )
