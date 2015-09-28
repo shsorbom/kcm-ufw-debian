@@ -77,5 +77,6 @@ endforeach(trans ${UFW_TRANSLATIONS})
 
 #add_subdirectory( docs )
 add_subdirectory( po )
+feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 #kde4_install_icons( ${ICON_INSTALL_DIR} )
