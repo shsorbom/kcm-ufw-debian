@@ -32,10 +32,10 @@
 #include <KDE/KConfigGroup>
 #include <KDE/KGlobal>
 #include <KDE/KLocale>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QTreeWidget>
-#include <QtGui/QHeaderView>
-#include <QtCore/QTimer>
+#include <QVBoxLayout>
+#include <QTreeWidget>
+#include <QHeaderView>
+#include <QTimer>
 
 namespace UFW
 {

@@ -25,8 +25,8 @@
  */
 
 #include <kauth.h>
-#include <KDE/KDialog>
-#include <QtCore/QString>
+#include <QDialog>
+#include <QString>
 
 class QTreeWidget;
 class KAction;
@@ -38,7 +38,7 @@ namespace UFW
 
 class Kcm;
 
-class LogViewer : public KDialog
+class LogViewer : public QDialog
 {
     Q_OBJECT
 

@@ -24,8 +24,8 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#include <KDE/KDialog>
-#include <QtCore/QMap>
+#include <QDialog>
+#include <QMap>
 #include "rule.h"
 #include "kcm.h"
 #include "ui_rulewidget.h"
@@ -33,7 +33,7 @@
 namespace UFW
 {
 
-class RuleDialog : public KDialog, public Ui::RuleWidget
+class RuleDialog : public QDialog, public Ui::RuleWidget
 {
     Q_OBJECT
 

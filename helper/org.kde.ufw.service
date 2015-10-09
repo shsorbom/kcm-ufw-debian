@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.kde.ufw
+Exec=/usr/local/lib/x86_64-linux-gnu/libexec/kauth/kcm_ufw_helper
+User=root

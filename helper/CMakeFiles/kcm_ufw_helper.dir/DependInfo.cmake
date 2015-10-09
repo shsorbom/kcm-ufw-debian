@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/helper/helper.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/helper/CMakeFiles/kcm_ufw_helper.dir/helper.cpp.o"
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/helper/kcm_ufw_helper_automoc.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/helper/CMakeFiles/kcm_ufw_helper.dir/kcm_ufw_helper_automoc.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/helper/helper.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/helper/CMakeFiles/kcm_ufw_helper.dir/helper.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/helper/kcm_ufw_helper_automoc.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/helper/CMakeFiles/kcm_ufw_helper.dir/kcm_ufw_helper_automoc.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

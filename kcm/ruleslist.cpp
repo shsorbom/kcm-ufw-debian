@@ -26,9 +26,9 @@
 #include <KDE/KConfigGroup>
 #include <KDE/KGlobal>
 #include <KDE/KLocale>
-#include <QtCore/QTimer>
-#include <QtGui/QDropEvent>
-#include <QtGui/QHeaderView>
+#include <QTimer>
+#include <QDropEvent>
+#include <QHeaderView>
 
 namespace UFW
 {

@@ -23,15 +23,15 @@
 
 #include "helper.h"
 #include "config.h"
-#include <QtCore/QDebug>
-#include <QtCore/QByteArray>
-#include <QtCore/QProcess>
-#include <QtCore/QProcessEnvironment>
-#include <QtCore/QString>
-#include <QtCore/QStringList>
-#include <QtCore/QTextCodec>
-#include <QtCore/QDir>
-#include <QtCore/QFile>
+#include <QDebug>
+#include <QByteArray>
+#include <QProcess>
+#include <QProcessEnvironment>
+#include <QString>
+#include <QStringList>
+#include <QTextCodec>
+#include <QDir>
+#include <QFile>
 #include <sys/stat.h>
 
 namespace UFW
@@ -118,8 +118,9 @@ ActionReply Helper::viewlog(const QVariantMap &args)
     }
     else
     {
-        reply=ActionReply::HelperErrorReply;
-        reply.setErrorCode(STATUS_OPERATION_FAILED);
+        reply=ActionReply::HelperErrorReply();
+        reply.setErrorCode(ActionReply::AuthorizationDeniedError); //for now, we are assuming permission was denied
+
     }
 
     return reply;
@@ -158,8 +159,8 @@ ActionReply Helper::modify(const QVariantMap &args)
     else if("deleteProfile"==cmd)
         return deleteProfile(args, cmd);
 
-    ActionReply reply=ActionReply::HelperErrorReply;
-    reply.setErrorCode(STATUS_INVALID_CMD);
+    ActionReply reply=ActionReply::HelperErrorReply();
+    reply.setErrorCode(ActionReply::InvalidActionError);
     return reply;
 }
 
@@ -206,8 +207,8 @@ ActionReply Helper::setProfile(const QVariantMap &args, const QString &cmd)
 
     if(cmdArgs.isEmpty())
     {
-        ActionReply reply=ActionReply::HelperErrorReply;
-        reply.setErrorCode(STATUS_INVALID_ARGUMENTS);
+        ActionReply reply=ActionReply::HelperErrorReply();
+        reply.setErrorCode(ActionReply::InvalidActionError);
         return reply;
     }
     else
@@ -228,8 +229,8 @@ ActionReply Helper::saveProfile(const QVariantMap &args, const QString &cmd)
 
     if(name.isEmpty() || xml.isEmpty())
     {
-        reply=ActionReply::HelperErrorReply;
-        reply.setErrorCode(STATUS_INVALID_ARGUMENTS);
+        reply=ActionReply::HelperErrorReply();
+        reply.setErrorCode(ActionReply::InvalidActionError );
     }
     else
     {
@@ -245,8 +246,8 @@ ActionReply Helper::saveProfile(const QVariantMap &args, const QString &cmd)
         }
         else
         {
-            reply=ActionReply::HelperErrorReply;
-            reply.setErrorCode(STATUS_OPERATION_FAILED);
+            reply=ActionReply::HelperErrorReply();
+            reply.setErrorCode(ActionReply::AuthorizationDeniedError);
         }
     }
 
@@ -265,13 +266,14 @@ ActionReply Helper::deleteProfile(const QVariantMap &args, const QString &cmd)
 
     if(name.isEmpty())
     {
-        reply=ActionReply::HelperErrorReply;
-        reply.setErrorCode(STATUS_INVALID_ARGUMENTS);
+        reply=ActionReply::HelperErrorReply();
+        reply.setErrorCode(ActionReply::InvalidActionError); //InvalidActionError, Original reply was "STATUS_OPERATION_FAILED"
+        //Logic for this change in kf5:
     }
     else if(!QFile::remove(QString(KCM_UFW_DIR)+"/"+name+PROFILE_EXTENSION))
     {
-        reply=ActionReply::HelperErrorReply;
-        reply.setErrorCode(STATUS_OPERATION_FAILED);
+        reply=ActionReply::HelperErrorReply();
+        reply.setErrorCode(ActionReply::AuthorizationDeniedError );
     }
 
     reply.addData("cmd", cmd);
@@ -294,8 +296,8 @@ ActionReply Helper::addRules(const QVariantMap &args, const QString &cmd)
         checkFolder();
         return run(cmdArgs, QStringList() << "--list", cmd);
     }
-    ActionReply reply=ActionReply::HelperErrorReply;
-    reply.setErrorCode(STATUS_INVALID_ARGUMENTS);
+    ActionReply reply=ActionReply::HelperErrorReply();
+    reply.setErrorCode(ActionReply::InvalidActionError);
     return reply;
 }
 
@@ -356,8 +358,8 @@ ActionReply Helper::run(const QStringList &args, const QString &cmd)
 
     if(0!=exitCode)
     {
-        reply=ActionReply::HelperErrorReply;
-        reply.setErrorCode(exitCode);
+        reply=ActionReply::HelperErrorReply();
+        reply.setErrorCode(ActionReply::AuthorizationDeniedError);
         reply.addData("response", ufw.readAllStandardError());
     }
     else
@@ -368,4 +370,4 @@ ActionReply Helper::run(const QStringList &args, const QString &cmd)
 
 }
 
-KDE4_AUTH_HELPER_MAIN("org.kde.ufw", UFW::Helper)
+KAUTH_HELPER_MAIN ("org.kde.ufw", UFW::Helper)

@@ -24,8 +24,8 @@
 #include "stackedwidget.h"
 #include <KDE/KIcon>
 #include <KDE/KIconEffect>
-#include <QtGui/QPixmap>
-#include <QtGui/QPainter>
+#include <QPixmap>
+#include <QPainter>
 
 namespace UFW
 {

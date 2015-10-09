@@ -22,9 +22,9 @@
  */
 
 #include "lineedit.h"
-#include <QtCore/QEvent>
-#include <QtGui/QMouseEvent>
-#include <QtGui/QRadioButton>
+#include <QEvent>
+#include <QMouseEvent>
+#include <QRadioButton>
 
 namespace UFW
 {

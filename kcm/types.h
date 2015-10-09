@@ -24,8 +24,8 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#include <QtCore/QString>
-#include <QtCore/QVariant>
+#include <QString>
+#include <QVariant>
 
 namespace UFW
 {

@@ -24,9 +24,9 @@
 #include "rule.h"
 #include "appprofiles.h"
 #include <KDE/KLocale>
-#include <QtCore/QMap>
-#include <QtCore/QByteArray>
-#include <QtCore/QTextStream>
+#include <QMap>
+#include <QByteArray>
+#include <QTextStream>
 #include <QtXml/QDomElement>
 #include <netdb.h>
 #include <arpa/inet.h>

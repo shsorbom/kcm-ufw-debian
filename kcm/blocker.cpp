@@ -22,7 +22,7 @@
  */
 
 #include "blocker.h"
-#include <QtCore/QEvent>
+#include <QEvent>
 
 namespace UFW
 {

@@ -25,9 +25,9 @@
 #include <QtXml/QDomElement>
 #include <QtXml/QDomNode>
 #include <QtXml/QDomText>
-#include <QtCore/QFile>
-#include <QtCore/QStringList>
-#include <QtCore/QTextStream>
+#include <QFile>
+#include <QStringList>
+#include <QTextStream>
 #include "profile.h"
 
 namespace UFW

@@ -24,9 +24,9 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#include <QtCore/QByteArray>
-#include <QtCore/QList>
-#include <QtCore/QSet>
+#include <QByteArray>
+#include <QList>
+#include <QSet>
 #include "rule.h"
 #include "types.h"
 

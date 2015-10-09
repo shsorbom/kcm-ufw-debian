@@ -32,8 +32,8 @@
 #include <KDE/KLocale>
 #include <KDE/KIcon>
 #include <KDE/KMessageBox>
-#include <QtGui/QValidator>
-#include <QtGui/QButtonGroup>
+#include <QValidator>
+#include <QButtonGroup>
 #include <QtNetwork/QNetworkInterface>
 #include <sys/types.h>
 #include <sys/socket.h>

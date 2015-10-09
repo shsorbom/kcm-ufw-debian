@@ -25,7 +25,7 @@
  */
 
 #include "rule.h"
-#include <QtGui/QTreeWidget>
+#include <QTreeWidget>
 
 class QDropEvent;
 

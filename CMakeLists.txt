@@ -52,7 +52,6 @@ configure_file(config.h.cmake ${CMAKE_BINARY_DIR}/config.h)
 add_subdirectory( helper )
 add_subdirectory( kcm )
 
-feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 if (NOT UFW_TRANSLATIONS)
     set(UFW_TRANSLATIONS "all")

@@ -4,21 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/appprofiles.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/CMakeFiles/kcm_ufw.dir/appprofiles.cpp.o"
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/blocker.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/CMakeFiles/kcm_ufw.dir/blocker.cpp.o"
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/combobox.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/CMakeFiles/kcm_ufw.dir/combobox.cpp.o"
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/kcm.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/CMakeFiles/kcm_ufw.dir/kcm.cpp.o"
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/kcm_ufw_automoc.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/CMakeFiles/kcm_ufw.dir/kcm_ufw_automoc.cpp.o"
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/lineedit.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/CMakeFiles/kcm_ufw.dir/lineedit.cpp.o"
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/logviewer.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/CMakeFiles/kcm_ufw.dir/logviewer.cpp.o"
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/profile.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/CMakeFiles/kcm_ufw.dir/profile.cpp.o"
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/rule.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/CMakeFiles/kcm_ufw.dir/rule.cpp.o"
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/ruledialog.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o"
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/ruleslist.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/CMakeFiles/kcm_ufw.dir/ruleslist.cpp.o"
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/stackedwidget.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/CMakeFiles/kcm_ufw.dir/stackedwidget.cpp.o"
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/statusbox.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/CMakeFiles/kcm_ufw.dir/statusbox.cpp.o"
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/strings.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/CMakeFiles/kcm_ufw.dir/strings.cpp.o"
-  "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/types.cpp" "/home/shawn/Projects/kcm-ufw-package/kcm-ufw-debian/kcm/CMakeFiles/kcm_ufw.dir/types.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/appprofiles.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir/appprofiles.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/blocker.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir/blocker.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/combobox.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir/combobox.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/kcm.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir/kcm.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/kcm_ufw_automoc.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir/kcm_ufw_automoc.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/lineedit.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir/lineedit.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/logviewer.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir/logviewer.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/profile.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir/profile.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/rule.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir/rule.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/ruledialog.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/ruleslist.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir/ruleslist.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/stackedwidget.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir/stackedwidget.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/statusbox.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir/statusbox.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/strings.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir/strings.cpp.o"
+  "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/types.cpp" "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir/types.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

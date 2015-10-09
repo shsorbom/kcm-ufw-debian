@@ -38,15 +38,15 @@
 #include <KDE/KStandardDirs>
 #include <KDE/KTemporaryFile>
 #include <KDE/KIO/NetAccess>
-#include <QtGui/QLabel>
-#include <QtGui/QTreeWidget>
-#include <QtGui/QValidator>
-#include <QtCore/QByteArray>
-#include <QtCore/QList>
-#include <QtCore/QMap>
-#include <QtCore/QSet>
-#include <QtCore/QTimer>
-#include <QtCore/QTextStream>
+#include <QLabel>
+#include <QTreeWidget>
+#include <QValidator>
+#include <QByteArray>
+#include <QList>
+#include <QMap>
+#include <QSet>
+#include <QTimer>
+#include <QTextStream>
 #include <sys/utsname.h>
 
 #define EXTENSION ".ufw"

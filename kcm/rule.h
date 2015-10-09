@@ -25,7 +25,7 @@
  */
 
 #include "types.h"
-#include <QtCore/QString>
+#include <QString>
 
 class QDomElement;
 

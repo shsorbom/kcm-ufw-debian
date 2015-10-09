@@ -22,10 +22,10 @@
  */
 
 #include "combobox.h"
-#include <QtCore/QEvent>
-#include <QtCore/QCoreApplication>
-#include <QtGui/QMouseEvent>
-#include <QtGui/QRadioButton>
+#include <QEvent>
+#include <QCoreApplication>
+#include <QMouseEvent>
+#include <QRadioButton>
 
 namespace UFW
 {
