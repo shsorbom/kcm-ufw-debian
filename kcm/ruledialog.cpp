@@ -38,6 +38,7 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
+#include <KSharedConfig>
 
 namespace UFW
 {
@@ -492,7 +493,7 @@ RuleDialog::RuleDialog(Kcm *parent, bool isEditDlg)
 
     controlSimpleProtocol();
 
-    KConfigGroup grp(KGlobal::config(), CFG_GROUP);
+    KConfigGroup grp(KSharedConfig::openConfig(), CFG_GROUP);
     int          rt=grp.readEntry(CFG_RULE_TYPE, (int)0);
 
     ruleType->setCurrentIndex(RT_SIMPLE==rt || RT_ADVANCED==rt ? rt : RT_SIMPLE);
@@ -598,7 +599,7 @@ RuleDialog::RuleDialog(Kcm *parent, bool isEditDlg)
 
 RuleDialog::~RuleDialog()
 {
-    KConfigGroup grp(KGlobal::config(), CFG_GROUP);
+    KConfigGroup grp(KSharedConfig::openConfig(), CFG_GROUP);
 
     grp.writeEntry(CFG_RULE_TYPE, ruleType->currentIndex());
     grp.writeEntry(CFG_SIZE, size());

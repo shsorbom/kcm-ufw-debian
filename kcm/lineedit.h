@@ -31,7 +31,7 @@ class QRadioButton;
 namespace UFW
 {
 
-class LineEdit : public KLineEdit
+class LineEdit : public QLineEdit
 {
     public:
 

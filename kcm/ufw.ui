@@ -141,41 +141,6 @@
          </column>
         </widget>
        </item>
-       <item row="0" column="1">
-        <widget class="KPushButton" name="addRuleButton">
-         <property name="text">
-          <string>Add...</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="KPushButton" name="editRuleButton">
-         <property name="text">
-          <string>Edit...</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="KPushButton" name="removeRuleButton">
-         <property name="text">
-          <string>Remove</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <widget class="KPushButton" name="moveRuleUpButton">
-         <property name="text">
-          <string>Move Up</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="KPushButton" name="moveRuleDownButton">
-         <property name="text">
-          <string>Move Down</string>
-         </property>
-        </widget>
-       </item>
        <item row="5" column="1">
         <spacer name="verticalSpacer">
          <property name="orientation">
@@ -188,6 +153,41 @@
           </size>
          </property>
         </spacer>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="moveRuleDownButton">
+         <property name="text">
+          <string>Move Down</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="moveRuleUpButton">
+         <property name="text">
+          <string>Move Up</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="removeRuleButton">
+         <property name="text">
+          <string>Remove</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="editRuleButton">
+         <property name="text">
+          <string>Edit...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="addRuleButton">
+         <property name="text">
+          <string>Add...</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -295,11 +295,6 @@
    <class>KSqueezedTextLabel</class>
    <extends>QLabel</extends>
    <header>ksqueezedtextlabel.h</header>
-  </customwidget>
-  <customwidget>
-   <class>KPushButton</class>
-   <extends>QPushButton</extends>
-   <header>kpushbutton.h</header>
   </customwidget>
   <customwidget>
    <class>UFW::RulesList</class>

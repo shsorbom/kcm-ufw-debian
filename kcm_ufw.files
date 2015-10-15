@@ -32,4 +32,6 @@ kcm/strings.cpp
 kcm/strings.h
 kcm/types.cpp
 kcm/types.h
+kcm/ufw.ui
+kcm/rulewidget.ui
 config.h

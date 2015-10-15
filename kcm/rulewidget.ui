@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>499</width>
-    <height>420</height>
+    <width>526</width>
+    <height>494</height>
    </rect>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -77,7 +77,7 @@
        <item row="2" column="1">
         <layout class="QHBoxLayout" name="horizontalLayout_3x">
          <property name="spacing">
-          <number>-1</number>
+          <number>6</number>
          </property>
          <item>
           <widget class="QRadioButton" name="simplePortRadio">
@@ -93,27 +93,9 @@
           </widget>
          </item>
          <item>
-          <widget class="UFW::LineEdit" name="simplePort">
+          <widget class="QLineEdit" name="lineEdit_5">
            <property name="enabled">
             <bool>false</bool>
-           </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>64</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="clickMessage">
-            <string>Port number</string>
-           </property>
-           <property name="showClearButton" stdset="0">
-            <bool>true</bool>
            </property>
           </widget>
          </item>
@@ -224,21 +206,12 @@
                </widget>
               </item>
               <item>
-               <widget class="UFW::LineEdit" name="advancedSrcHost">
+               <widget class="QLineEdit" name="lineEdit">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="clickMessage">
-                 <string>IP address</string>
-                </property>
-                <property name="showClearButton" stdset="0">
-                 <bool>true</bool>
+                <property name="clearButtonEnabled">
+                 <bool>false</bool>
                 </property>
                </widget>
               </item>
@@ -277,27 +250,9 @@
                </widget>
               </item>
               <item>
-               <widget class="UFW::LineEdit" name="advancedSrcPort">
+               <widget class="QLineEdit" name="lineEdit_2">
                 <property name="enabled">
                  <bool>false</bool>
-                </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>64</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="clickMessage">
-                 <string>Port number</string>
-                </property>
-                <property name="showClearButton" stdset="0">
-                 <bool>true</bool>
                 </property>
                </widget>
               </item>
@@ -320,14 +275,14 @@
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
-                <property name="sizeAdjustPolicy">
-                 <enum>QComboBox::AdjustToContents</enum>
-                </property>
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
                   <horstretch>0</horstretch>
                   <verstretch>0</verstretch>
                  </sizepolicy>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToContents</enum>
                 </property>
                </widget>
               </item>
@@ -381,21 +336,9 @@
                </widget>
               </item>
               <item>
-               <widget class="UFW::LineEdit" name="advancedDestHost">
+               <widget class="QLineEdit" name="lineEdit_3">
                 <property name="enabled">
                  <bool>false</bool>
-                </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="clickMessage">
-                 <string>IP address</string>
-                </property>
-                <property name="showClearButton" stdset="0">
-                 <bool>true</bool>
                 </property>
                </widget>
               </item>
@@ -427,27 +370,9 @@
                </widget>
               </item>
               <item>
-               <widget class="UFW::LineEdit" name="advancedDestPort">
+               <widget class="QLineEdit" name="lineEdit_4">
                 <property name="enabled">
                  <bool>false</bool>
-                </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>64</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="clickMessage">
-                 <string>Port number</string>
-                </property>
-                <property name="showClearButton" stdset="0">
-                 <bool>true</bool>
                 </property>
                </widget>
               </item>
@@ -470,14 +395,14 @@
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
-                <property name="sizeAdjustPolicy">
-                 <enum>QComboBox::AdjustToContents</enum>
-                </property>
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
                   <horstretch>0</horstretch>
                   <verstretch>0</verstretch>
                  </sizepolicy>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToContents</enum>
                 </property>
                </widget>
               </item>
@@ -560,20 +485,9 @@
    <header>ksqueezedtextlabel.h</header>
   </customwidget>
   <customwidget>
-   <class>KLineEdit</class>
-   <extends>QLineEdit</extends>
-   <header>klineedit.h</header>
-  </customwidget>
-  <customwidget>
    <class>UFW::ComboBox</class>
    <extends>QComboBox</extends>
    <header>combobox.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>UFW::LineEdit</class>
-   <extends>KLineEdit</extends>
-   <header>lineedit.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>
@@ -588,7 +502,6 @@
   <tabstop>simplePolicy</tabstop>
   <tabstop>simpleDirection</tabstop>
   <tabstop>simplePortRadio</tabstop>
-  <tabstop>simplePort</tabstop>
   <tabstop>simpleProfileRadio</tabstop>
   <tabstop>simpleProfile</tabstop>
   <tabstop>simpleProtocol</tabstop>
@@ -597,18 +510,14 @@
   <tabstop>advancedDirection</tabstop>
   <tabstop>advancedSrcAnyHostRadio</tabstop>
   <tabstop>advancedSrcHostRadio</tabstop>
-  <tabstop>advancedSrcHost</tabstop>
   <tabstop>advancedSrcAnyPortRadio</tabstop>
   <tabstop>advancedSrcPortRadio</tabstop>
-  <tabstop>advancedSrcPort</tabstop>
   <tabstop>advancedSrcProfileRadio</tabstop>
   <tabstop>advancedSrcProfile</tabstop>
   <tabstop>advancedDestAnyHostRadio</tabstop>
   <tabstop>advancedDestHostRadio</tabstop>
-  <tabstop>advancedDestHost</tabstop>
   <tabstop>advancedDestAnyPortRadio</tabstop>
   <tabstop>advancedDestPortRadio</tabstop>
-  <tabstop>advancedDestPort</tabstop>
   <tabstop>advancedDestProfileRadio</tabstop>
   <tabstop>advancedDestProfile</tabstop>
   <tabstop>advancedProtocol</tabstop>
@@ -617,22 +526,6 @@
  </tabstops>
  <resources/>
  <connections>
-  <connection>
-   <sender>simplePortRadio</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>simplePort</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>92</x>
-     <y>106</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>152</x>
-     <y>108</y>
-    </hint>
-   </hints>
-  </connection>
   <connection>
    <sender>simpleProfileRadio</sender>
    <signal>toggled(bool)</signal>
@@ -650,38 +543,6 @@
    </hints>
   </connection>
   <connection>
-   <sender>advancedSrcHostRadio</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>advancedSrcHost</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>87</x>
-     <y>164</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>164</x>
-     <y>172</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>advancedSrcPortRadio</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>advancedSrcPort</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>87</x>
-     <y>222</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>120</x>
-     <y>226</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>advancedSrcProfileRadio</sender>
    <signal>toggled(bool)</signal>
    <receiver>advancedSrcProfile</receiver>
@@ -694,38 +555,6 @@
     <hint type="destinationlabel">
      <x>148</x>
      <y>258</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>advancedDestHostRadio</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>advancedDestHost</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>328</x>
-     <y>158</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>357</x>
-     <y>162</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>advancedDestPortRadio</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>advancedDestPort</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>332</x>
-     <y>219</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>375</x>
-     <y>221</y>
     </hint>
    </hints>
   </connection>

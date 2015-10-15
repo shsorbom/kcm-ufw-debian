@@ -30,7 +30,7 @@ namespace UFW
 {
 
 LineEdit::LineEdit(QWidget *parent)
-        : KLineEdit(parent)
+        : QLineEdit(parent)
         , radioButton(0L)
         , mousePressed(false)
 {

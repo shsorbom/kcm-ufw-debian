@@ -28,16 +28,17 @@
 #include "types.h"
 #include "strings.h"
 #include "statusbox.h"
-#include <KDE/KAboutData>
-#include <KDE/KLocale>
-#include <KDE/KMessageBox>
-#include <KDE/KPluginFactory>
-#include <KDE/KColorScheme>
-#include <KDE/KFileDialog>
-#include <KDE/KInputDialog>
-#include <KDE/KStandardDirs>
-#include <KDE/KTemporaryFile>
-#include <KDE/KIO/NetAccess>
+//#include <KDE/KAboutData>
+#include <kaboutdata.h>
+#include <KLocalizedString>
+#include <KMessageBox>
+#include <KPluginFactory>
+#include <KColorScheme>
+#include <QFileDialog>
+#include <QInputDialog>
+
+#include <QTemporaryFile>
+#include <KIO/Job> //netacces is depracated
 #include <QLabel>
 #include <QTreeWidget>
 #include <QValidator>
@@ -48,6 +49,8 @@
 #include <QTimer>
 #include <QTextStream>
 #include <sys/utsname.h>
+#include <QFileDialog>
+#include <QStandardPaths>
 
 #define EXTENSION ".ufw"
 #define FOLDER    "kcm_ufw"
@@ -178,7 +181,7 @@ static void addModule(QTreeWidget *tree, const KernelModule &mod)
 
 static inline QString profileFileName(const QString &name)
 {
-    return KGlobal::dirs()->saveLocation("data", FOLDER"/", KStandardDirs::NoDuplicates)+name+EXTENSION;
+    return QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/') + FOLDER"/"+name+EXTENSION;
 }
 
 static inline QString profileName(const QAction *profile)
@@ -670,7 +673,7 @@ void Kcm::removeProfile(QAction *profile)
 
 void Kcm::importProfile()
 {
-    KUrl url=KFileDialog::getOpenUrl(KUrl(), i18n("*.ufw|Firewall Settings"), this);
+    KUrl url = QFileDialog::getOpenFileUrl(this, QString()QString(), i18n("*.ufw|Firewall Settings"));
 
     if(!url.isEmpty())
     {
@@ -703,7 +706,7 @@ void Kcm::exportProfile()
 
     if(!url.isEmpty())
     {
-        KTemporaryFile tempFile;
+        QTemporaryFile tempFile;
 
         tempFile.setAutoRemove(true);
 
@@ -755,7 +758,7 @@ QString Kcm::getNewProfileName(const QString &currentName, bool isImport)
     {
         if(promptForName)
         {
-            name=KInputDialog::getText(i18n("Profile Name"), i18n("Please enter a name for the profile:"), name, 0, this, &validator);
+            name=QInputDialog::getText(i18n("Profile Name"), i18n("Please enter a name for the profile:"), name, 0, this, &validator);
             name.trimmed().simplified();
         }
 
@@ -785,7 +788,7 @@ QString Kcm::getNewProfileName(const QString &currentName, bool isImport)
 
 void Kcm::listUserProfiles()
 {
-    QStringList                files(KGlobal::dirs()->findAllResources("data", FOLDER"/*"EXTENSION, KStandardDirs::NoDuplicates));
+    QStringList                files(QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, FOLDER"/*"EXTENSION, KStandardDirs::NoDuplicates));
     QStringList::ConstIterator it(files.constBegin()),
                                end(files.constEnd());
 
@@ -1168,17 +1171,17 @@ void Kcm::setupActions()
 {
     queryAction=KAuth::Action("org.kde.ufw.query");
     queryAction.setHelperID("org.kde.ufw");
-#if KDE_IS_VERSION(4, 5, 90)
+/*#if KDE_IS_VERSION(4, 5, 90)
     queryAction.setParentWidget(this);
-#endif
+#endif*/
 //     queryAction.setExecutesAsync(true);
     connect(queryAction.watcher(), SIGNAL(actionPerformed(ActionReply)), SLOT(queryPerformed(ActionReply)));
 
     modifyAction=KAuth::Action("org.kde.ufw.modify");
     modifyAction.setHelperID("org.kde.ufw");
-#if KDE_IS_VERSION(4, 5, 90)
+/*#if KDE_IS_VERSION(4, 5, 90)
     modifyAction.setParentWidget(this);
-#endif
+#endif*/
 //     modifyAction.setExecutesAsync(true);
     connect(modifyAction.watcher(), SIGNAL(actionPerformed(ActionReply)), SLOT(modifyPerformed(ActionReply)));
 }

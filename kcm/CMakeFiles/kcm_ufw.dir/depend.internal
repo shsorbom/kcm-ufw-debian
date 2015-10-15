@@ -257,7 +257,6 @@ kcm/CMakeFiles/kcm_ufw.dir/kcm.cpp.o
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/kcm.cpp
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/kcm.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/kcm.moc
- /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/lineedit.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/logviewer.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/profile.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/rule.h
@@ -275,32 +274,79 @@ kcm/CMakeFiles/kcm_ufw.dir/kcm.cpp.o
  /usr/include/KF5/KAuth/kauthactionreply.h
  /usr/include/KF5/KAuth/kauthexecutejob.h
  /usr/include/KF5/KAuth/kauthhelpersupport.h
+ /usr/include/KF5/KConfigCore/kconfig.h
+ /usr/include/KF5/KConfigCore/kconfigbase.h
+ /usr/include/KF5/KConfigCore/kconfigcore_export.h
+ /usr/include/KF5/KConfigCore/ksharedconfig.h
  /usr/include/KF5/KConfigWidgets/KCModule
+ /usr/include/KF5/KConfigWidgets/KColorScheme
  /usr/include/KF5/KConfigWidgets/kcmodule.h
+ /usr/include/KF5/KConfigWidgets/kcolorscheme.h
  /usr/include/KF5/KConfigWidgets/kconfigwidgets_export.h
+ /usr/include/KF5/KCoreAddons/KPluginFactory
+ /usr/include/KF5/KCoreAddons/kaboutdata.h
+ /usr/include/KF5/KCoreAddons/kcompositejob.h
  /usr/include/KF5/KCoreAddons/kcoreaddons_export.h
+ /usr/include/KF5/KCoreAddons/kexportplugin.h
  /usr/include/KF5/KCoreAddons/kjob.h
+ /usr/include/KF5/KCoreAddons/kpluginfactory.h
+ /usr/include/KF5/KI18n/KLocalizedString
  /usr/include/KF5/KI18n/ki18n_export.h
  /usr/include/KF5/KI18n/klocalizedstring.h
  /usr/include/KF5/KI18n/kuitmarkup.h
+ /usr/include/KF5/KIOCore/KIO/Job
+ /usr/include/KF5/KIOCore/kio/filecopyjob.h
+ /usr/include/KF5/KIOCore/kio/filejob.h
+ /usr/include/KF5/KIOCore/kio/global.h
+ /usr/include/KF5/KIOCore/kio/job.h
+ /usr/include/KF5/KIOCore/kio/job_base.h
+ /usr/include/KF5/KIOCore/kio/jobclasses.h
+ /usr/include/KF5/KIOCore/kio/jobtracker.h
+ /usr/include/KF5/KIOCore/kio/listjob.h
+ /usr/include/KF5/KIOCore/kio/metadata.h
+ /usr/include/KF5/KIOCore/kio/mimetypejob.h
+ /usr/include/KF5/KIOCore/kio/mkdirjob.h
+ /usr/include/KF5/KIOCore/kio/multigetjob.h
+ /usr/include/KF5/KIOCore/kio/simplejob.h
+ /usr/include/KF5/KIOCore/kio/specialjob.h
+ /usr/include/KF5/KIOCore/kio/statjob.h
+ /usr/include/KF5/KIOCore/kio/storedtransferjob.h
+ /usr/include/KF5/KIOCore/kio/transferjob.h
+ /usr/include/KF5/KIOCore/kio/udsentry.h
+ /usr/include/KF5/KIOCore/kiocore_export.h
+ /usr/include/KF5/KWidgetsAddons/KMessageBox
+ /usr/include/KF5/KWidgetsAddons/kguiitem.h
+ /usr/include/KF5/KWidgetsAddons/kmessagebox.h
  /usr/include/KF5/KWidgetsAddons/ksqueezedtextlabel.h
+ /usr/include/KF5/KWidgetsAddons/kstandardguiitem.h
  /usr/include/KF5/KWidgetsAddons/kwidgetsaddons_export.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QByteArray
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QChar
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDataStream
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QExplicitlySharedDataPointer
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QFile
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QHash
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QLatin1Char
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QList
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QMetaType
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QPair
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QPluginLoader
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSet
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QSharedData
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSharedDataPointer
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QStandardPaths
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QTemporaryFile
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTextStream
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QUrl
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QtGlobal
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QtPlugin
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -328,11 +374,14 @@ kcm/CMakeFiles/kcm_ufw.dir/kcm.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdir.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfeatures.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qfileinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h
@@ -342,6 +391,9 @@ kcm/CMakeFiles/kcm_ufw.dir/kcm.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qisenum.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qjsonobject.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qjsonvalue.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlibrary.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qline.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h
@@ -357,7 +409,10 @@ kcm/CMakeFiles/kcm_ufw.dir/kcm.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qpair.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qplugin.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qpluginloader.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qpointer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h
@@ -369,12 +424,14 @@ kcm/CMakeFiles/kcm_ufw.dir/kcm.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstandardpaths.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtemporaryfile.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
@@ -384,6 +441,8 @@ kcm/CMakeFiles/kcm_ufw.dir/kcm.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QIcon
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QPalette
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QValidator
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
@@ -423,15 +482,19 @@ kcm/CMakeFiles/kcm_ufw.dir/kcm.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialogButtonBox
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFileDialog
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFormLayout
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGroupBox
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHeaderView
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QInputDialog
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLayout
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMessageBox
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QRadioButton
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem
@@ -456,16 +519,20 @@ kcm/CMakeFiles/kcm_ufw.dir/kcm.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialogbuttonbox.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qfiledialog.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qformlayout.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgroupbox.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qheaderview.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qinputdialog.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenu.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmessagebox.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qradiobutton.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h
@@ -481,13 +548,16 @@ kcm/CMakeFiles/kcm_ufw.dir/kcm.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreewidget.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreewidgetitemiterator.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
+ /usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/c89/qplatformdefs.h
+ /usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/posix/qplatformdefs.h
+ /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64/qplatformdefs.h
+ /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qplatformdefs.h
  config.h
 kcm/CMakeFiles/kcm_ufw.dir/kcm_ufw_automoc.cpp.o
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/blocker.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/combobox.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/kcm.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/kcm_ufw_automoc.cpp
- /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/lineedit.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/logviewer.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/moc_blocker.cpp
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/moc_kcm.cpp
@@ -845,6 +915,11 @@ kcm/CMakeFiles/kcm_ufw.dir/logviewer.cpp.o
  /usr/include/KF5/KAuth/kauthactionreply.h
  /usr/include/KF5/KAuth/kauthexecutejob.h
  /usr/include/KF5/KAuth/kauthhelpersupport.h
+ /usr/include/KF5/KConfigCore/KSharedConfig
+ /usr/include/KF5/KConfigCore/kconfig.h
+ /usr/include/KF5/KConfigCore/kconfigbase.h
+ /usr/include/KF5/KConfigCore/kconfigcore_export.h
+ /usr/include/KF5/KConfigCore/ksharedconfig.h
  /usr/include/KF5/KConfigWidgets/KCModule
  /usr/include/KF5/KConfigWidgets/kcmodule.h
  /usr/include/KF5/KConfigWidgets/kconfigwidgets_export.h
@@ -858,6 +933,7 @@ kcm/CMakeFiles/kcm_ufw.dir/logviewer.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QByteArray
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QChar
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDataStream
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QExplicitlySharedDataPointer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QHash
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QLatin1Char
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QList
@@ -870,6 +946,7 @@ kcm/CMakeFiles/kcm_ufw.dir/logviewer.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QtGlobal
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -938,6 +1015,7 @@ kcm/CMakeFiles/kcm_ufw.dir/logviewer.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstandardpaths.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h
@@ -1210,7 +1288,6 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/blocker.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/combobox.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/kcm.h
- /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/lineedit.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/profile.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/rule.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/ruledialog.cpp
@@ -1229,6 +1306,11 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o
  /usr/include/KF5/KAuth/kauthactionreply.h
  /usr/include/KF5/KAuth/kauthexecutejob.h
  /usr/include/KF5/KAuth/kauthhelpersupport.h
+ /usr/include/KF5/KConfigCore/KSharedConfig
+ /usr/include/KF5/KConfigCore/kconfig.h
+ /usr/include/KF5/KConfigCore/kconfigbase.h
+ /usr/include/KF5/KConfigCore/kconfigcore_export.h
+ /usr/include/KF5/KConfigCore/ksharedconfig.h
  /usr/include/KF5/KConfigWidgets/KCModule
  /usr/include/KF5/KConfigWidgets/kcmodule.h
  /usr/include/KF5/KConfigWidgets/kconfigwidgets_export.h
@@ -1242,6 +1324,7 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QByteArray
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QChar
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDataStream
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QExplicitlySharedDataPointer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QHash
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QLatin1Char
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QList
@@ -1253,6 +1336,7 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QtGlobal
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -1320,6 +1404,7 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstandardpaths.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h
@@ -1441,9 +1526,18 @@ kcm/CMakeFiles/kcm_ufw.dir/ruleslist.cpp.o
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/ruleslist.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/ruleslist.moc
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/types.h
+ /usr/include/KF5/KConfigCore/KSharedConfig
+ /usr/include/KF5/KConfigCore/kconfig.h
+ /usr/include/KF5/KConfigCore/kconfigbase.h
+ /usr/include/KF5/KConfigCore/kconfigcore_export.h
+ /usr/include/KF5/KConfigCore/ksharedconfig.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QByteArray
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QExplicitlySharedDataPointer
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QList
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QtGlobal
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -1510,6 +1604,7 @@ kcm/CMakeFiles/kcm_ufw.dir/ruleslist.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstandardpaths.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h

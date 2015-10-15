@@ -36,6 +36,7 @@
 #include <QTreeWidget>
 #include <QHeaderView>
 #include <QTimer>
+#include <KSharedConfig>
 
 namespace UFW
 {
@@ -114,7 +115,7 @@ LogViewer::LogViewer(Kcm *p)
     // Can't restore QHeaderView in constructor, so use a timer - and restore after eventloop starts.
     QTimer::singleShot(0, this, SLOT(restoreState()));
 
-    KConfigGroup grp(KGlobal::config(), CFG_GROUP);
+    KConfigGroup grp(KSharedConfig::openConfig(), CFG_GROUP);
     QSize        sz=grp.readEntry(CFG_SIZE, QSize(800, 400));
 
     if(sz.isValid())
@@ -123,7 +124,7 @@ LogViewer::LogViewer(Kcm *p)
 
 LogViewer::~LogViewer()
 {
-    KConfigGroup grp(KGlobal::config(), CFG_GROUP);
+    KConfigGroup grp(KSharedConfig::openConfig(), CFG_GROUP);
     grp.writeEntry(CFG_LIST_STATE, list->header()->saveState());
     grp.writeEntry(CFG_SHOW_RAW, toggleRawAction->isChecked());
     grp.writeEntry(CFG_SIZE, size());
@@ -131,7 +132,7 @@ LogViewer::~LogViewer()
 
 void LogViewer::restoreState()
 {
-    KConfigGroup grp(KGlobal::config(), CFG_GROUP);
+    KConfigGroup grp(KSharedConfig::openConfig(), CFG_GROUP);
     QByteArray state=grp.readEntry(CFG_LIST_STATE, QByteArray());
     if(!state.isEmpty())
     {

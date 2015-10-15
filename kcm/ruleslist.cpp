@@ -29,6 +29,7 @@
 #include <QTimer>
 #include <QDropEvent>
 #include <QHeaderView>
+#include <KSharedConfig>
 
 namespace UFW
 {
@@ -46,7 +47,7 @@ RulesList::RulesList(QWidget *parent)
 
 RulesList::~RulesList()
 {
-    KConfigGroup grp(KGlobal::config(), CFG_GROUP);
+    KConfigGroup grp(KSharedConfig::openConfig(), CFG_GROUP);
     grp.writeEntry(CFG_STATE, header()->saveState());
 }
 
@@ -80,7 +81,7 @@ void RulesList::dropEvent(QDropEvent *event)
 
 void RulesList::restoreState()
 {
-    KConfigGroup grp(KGlobal::config(), CFG_GROUP);
+    KConfigGroup grp(KSharedConfig::openConfig(), CFG_GROUP);
     QByteArray state=grp.readEntry(CFG_STATE, QByteArray());
     if(!state.isEmpty())
     {
