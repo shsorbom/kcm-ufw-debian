@@ -29,6 +29,8 @@ strings.h
 /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/strings.h
 statusbox.h
 /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/statusbox.h
+kauthaction.h
+-
 kaboutdata.h
 -
 KLocalizedString

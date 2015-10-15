@@ -29,6 +29,7 @@
 #include "strings.h"
 #include "statusbox.h"
 //#include <KDE/KAboutData>
+#include <kauthaction.h>
 #include <kaboutdata.h>
 #include <KLocalizedString>
 #include <KMessageBox>
@@ -190,7 +191,7 @@ static inline QString profileName(const QAction *profile)
 }
 
 Kcm::Kcm(QWidget *parent, const QVariantList&)
-   : KCModule(UfwFactory::componentData(), parent)
+   : KCModule(parent)
    , addDialog(0L)
    , editDialog(0L)
    , moveToPos(0)
@@ -198,10 +199,10 @@ Kcm::Kcm(QWidget *parent, const QVariantList&)
 {
     setButtons(Help|Default);
 
-    KAboutData *about = new KAboutData("kcm_ufw", 0, ki18n("UFW Settings"), VERSION, ki18n("GUI front-end for Uncomplicated FireWall"),
-                                       KAboutData::License_GPL, ki18n("(C) Craig Drummond, 2011"), KLocalizedString(), QByteArray(),
-                                       "craig.p.drummond@gmail.com");
-    about->addAuthor(ki18n("Craig Drummond"), ki18n("Developer and maintainer"), "craig.p.drummond@gmail.com");
+    KAboutData *about = new KAboutData("kcm_ufw", i18n("UFW Settings"), VERSION);
+    about -> addLicense(KAboutLicense::GPL_V3);
+
+    about->addAuthor(i18n("Craig Drummond"), i18n("Developer and maintainer"), "craig.p.drummond@gmail.com");
     setAboutData(about);
 
     setupUi(this);
@@ -788,7 +789,7 @@ QString Kcm::getNewProfileName(const QString &currentName, bool isImport)
 
 void Kcm::listUserProfiles()
 {
-    QStringList                files(QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, FOLDER"/*"EXTENSION, KStandardDirs::NoDuplicates));
+    QStringList                files(QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, FOLDER"/*"EXTENSION));
     QStringList::ConstIterator it(files.constBegin()),
                                end(files.constEnd());
 
@@ -1118,23 +1119,24 @@ void Kcm::setupWidgets()
     connect(ruleList, SIGNAL(itemSelectionChanged()), SLOT(ruleSelectionChanged()));
     connect(ruleList, SIGNAL(itemDoubleClicked(QTreeWidgetItem *, int)), SLOT(ruleDoubleClicked(QTreeWidgetItem *, int)));
     connect(modulesList, SIGNAL(itemClicked(QTreeWidgetItem *, int)), SLOT(moduleClicked(QTreeWidgetItem *, int)));
-    addRuleButton->setIcon(KIcon("list-add"));
-    editRuleButton->setIcon(KIcon("document-edit"));
-    removeRuleButton->setIcon(KIcon("list-remove"));
-    moveRuleUpButton->setIcon(KIcon("arrow-up"));
-    moveRuleDownButton->setIcon(KIcon("arrow-down"));
+    /*addRuleButton->setIcon(KIcon("list-add"));
+    //editRuleButton->setIcon(KIcon("document-edit"));
+    //removeRuleButton->setIcon(KIcon("list-remove"));
+    //moveRuleUpButton->setIcon(KIcon("arrow-up"));
+    //moveRuleDownButton->setIcon(KIcon("arrow-down"));
     refreshButton->setIcon(KIcon("view-refresh"));
     profilesButton->setIcon(KIcon("document-multiple"));
     logButton->setIcon(KIcon("text-x-log"));
+    //These are KDE4 errors, fix later*/
 
     QMenu *profilesMenu=new QMenu(this);
     noProfilesAction=new QAction(i18n("No Saved Profiles"), this);
     noProfilesAction->setEnabled(false);
-    profilesMenu->addAction(KIcon("document-save"), i18n("Save Current Settings..."), this, SLOT(saveProfile()));
-    loadMenu=profilesMenu->addMenu(KIcon("document-open"), i18n("Load Profile"));
-    deleteMenu=profilesMenu->addMenu(KIcon("edit-delete"), i18n("Delete Profile"));
-    profilesMenu->addAction(KIcon("document-import"), i18n("Import..."), this, SLOT(importProfile()));
-    profilesMenu->addAction(KIcon("document-export"), i18n("Export..."), this, SLOT(exportProfile()));
+    profilesMenu->addAction(i18n("Save Current Settings..."), this, SLOT(saveProfile()));
+    loadMenu=profilesMenu->addMenu (i18n("Load Profile")); // Dont forget to add icons back
+    deleteMenu=profilesMenu->addMenu(i18n("Delete Profile"));
+    profilesMenu->addAction(i18n("Import..."), this, SLOT(importProfile()));
+    profilesMenu->addAction(i18n("Export..."), this, SLOT(exportProfile()));
     profilesButton->setMenu(profilesMenu);
     ruleList->setDragEnabled(true);
     ruleList->viewport()->setAcceptDrops(true);
