@@ -215,8 +215,11 @@ Kcm::~Kcm()
 {
     // Disconnect from KAuth signals, as there might be an action in flight - and we can no longer handle this, due to
     // being terminated!!!
+    /*
+     * TODO
     disconnect(queryAction.watcher(), SIGNAL(actionPerformed(ActionReply)), this, SLOT(queryPerformed(ActionReply)));
     disconnect(modifyAction.watcher(), SIGNAL(actionPerformed(ActionReply)), this, SLOT(modifyPerformed(ActionReply)));
+    */
 }
 
 bool Kcm::addRules(const QList<Rule> &rules)
@@ -674,13 +677,13 @@ void Kcm::removeProfile(QAction *profile)
 
 void Kcm::importProfile()
 {
-    KUrl url = QFileDialog::getOpenFileUrl(this, QString()QString(), i18n("*.ufw|Firewall Settings"));
+    QUrl url = QFileDialog::getOpenFileUrl(this, QString(), QUrl(), i18n("*.ufw|Firewall Settings"));
 
     if(!url.isEmpty())
     {
         QString tempFile;
 
-        if( KIO::NetAccess::download(url, tempFile, this))
+        /*if( KIO::NetAccess::download(url, tempFile, this))
         {
             QFile   file(tempFile);
             Profile profile(file);
@@ -693,17 +696,18 @@ void Kcm::importProfile()
                     saveProfile(name, profile);
             }
             else
-                KMessageBox::error(this, i18n("<p><i>%1</i> is not a valid Firewall Settings file</p>", url.prettyUrl()));
-            KIO::NetAccess::removeTempFile(tempFile);
+                KMessageBox::error(this, i18n("<p><i>%1</i> is not a valid Firewall Settings file</p>", url.toDisplayString()));
+          //kio  KIO::NetAccess::removeTempFile(tempFile);
         }
         else
-            KMessageBox::error(this, KIO::NetAccess::lastErrorString());
+           //Kio KMessageBox::error(this, KIO::NetAccess::lastErrorString());
+           */
     }
 }
 
 void Kcm::exportProfile()
 {
-    KUrl url=KFileDialog::getSaveUrl(KUrl(), i18n("*.ufw|Firewall Settings"), this, QString(), KFileDialog::ConfirmOverwrite);
+    QUrl url = QFileDialog::getOpenFileUrl(this, QString(), QUrl(), i18n("*.ufw|Firewall Settings"));
 
     if(!url.isEmpty())
     {
@@ -722,8 +726,8 @@ void Kcm::exportProfile()
             stream << profile.toXml();
 
             tempFile.close();
-            if(!KIO::NetAccess::upload(tempFile.fileName(), url, this))
-                KMessageBox::error(this, KIO::NetAccess::lastErrorString());
+            // kioif(!KIO::NetAccess::upload(tempFile.fileName(), url, this))
+                //KMessageBox::error(this, KIO::NetAccess::lastErrorString());
         }
         else
             KMessageBox::error(this, i18n("Failed to create temporary file."));
@@ -748,7 +752,7 @@ void Kcm::displayLog()
         logViewer=new LogViewer(this);
     logViewer->showNormal();
 }
-
+/*
 QString Kcm::getNewProfileName(const QString &currentName, bool isImport)
 {
     QString              name=currentName;
@@ -759,7 +763,7 @@ QString Kcm::getNewProfileName(const QString &currentName, bool isImport)
     {
         if(promptForName)
         {
-            name=QInputDialog::getText(i18n("Profile Name"), i18n("Please enter a name for the profile:"), name, 0, this, &validator);
+            name=QInputDialog::getText(this, i18n("Profile Name"), i18n("Please enter a name for the profile:"), name, 0, &validator);
             name.trimmed().simplified();
         }
 
@@ -813,7 +817,7 @@ void Kcm::listUserProfiles()
     sortActions();
     showCurrentStatus();
 }
-
+*/
 QAction * Kcm::getAction(const QString &name)
 {
     QList<QAction *>                actions=loadMenu->actions();
@@ -1171,21 +1175,21 @@ void Kcm::setupWidgets()
 
 void Kcm::setupActions()
 {
-    queryAction=KAuth::Action("org.kde.ufw.query");
-    queryAction.setHelperID("org.kde.ufw");
+    //queryAction=KAuth::Action("org.kde.ufw.query");
+    //queryAction.setHelperID("org.kde.ufw");
 /*#if KDE_IS_VERSION(4, 5, 90)
     queryAction.setParentWidget(this);
 #endif*/
 //     queryAction.setExecutesAsync(true);
-    connect(queryAction.watcher(), SIGNAL(actionPerformed(ActionReply)), SLOT(queryPerformed(ActionReply)));
+    //connect(queryAction.watcher(), SIGNAL(actionPerformed(ActionReply)), SLOT(queryPerformed(ActionReply)));
 
-    modifyAction=KAuth::Action("org.kde.ufw.modify");
-    modifyAction.setHelperID("org.kde.ufw");
+    //modifyAction=KAuth::Action("org.kde.ufw.modify");
+    //modifyAction.setHelperID("org.kde.ufw");
 /*#if KDE_IS_VERSION(4, 5, 90)
     modifyAction.setParentWidget(this);
 #endif*/
 //     modifyAction.setExecutesAsync(true);
-    connect(modifyAction.watcher(), SIGNAL(actionPerformed(ActionReply)), SLOT(modifyPerformed(ActionReply)));
+    //connect(modifyAction.watcher(), SIGNAL(actionPerformed(ActionReply)), SLOT(modifyPerformed(ActionReply)));
 }
 
 void Kcm::addModules()

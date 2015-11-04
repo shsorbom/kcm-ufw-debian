@@ -1315,10 +1315,15 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/KF5/KConfigWidgets/kcm
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/KF5/KConfigWidgets/kconfigwidgets_export.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/KF5/KCoreAddons/kcoreaddons_export.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/KF5/KCoreAddons/kjob.h
+kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/KF5/KI18n/KLocalizedString
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/KF5/KI18n/ki18n_export.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/KF5/KI18n/klocalizedstring.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/KF5/KI18n/kuitmarkup.h
+kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/KF5/KWidgetsAddons/KMessageBox
+kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/KF5/KWidgetsAddons/kguiitem.h
+kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/KF5/KWidgetsAddons/kmessagebox.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/KF5/KWidgetsAddons/ksqueezedtextlabel.h
+kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/KF5/KWidgetsAddons/kstandardguiitem.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/KF5/KWidgetsAddons/kwidgetsaddons_export.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QByteArray
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QChar
@@ -1418,6 +1423,7 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/Q
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
+kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QIcon
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QValidator
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
@@ -1461,6 +1467,7 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/Q
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog
+kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialogButtonBox
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFormLayout
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGroupBox
@@ -1470,6 +1477,7 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/Q
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLayout
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu
+kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMessageBox
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QRadioButton
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem
@@ -1494,6 +1502,7 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/Q
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h
+kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialogbuttonbox.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qformlayout.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h
@@ -1504,6 +1513,7 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/Q
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenu.h
+kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmessagebox.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qradiobutton.h
 kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h

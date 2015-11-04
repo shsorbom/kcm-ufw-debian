@@ -27,11 +27,11 @@
 #include "strings.h"
 #include "combobox.h"
 #include <limits.h>
-#include <KDE/KConfigGroup>
-#include <KDE/KGlobal>
-#include <KDE/KLocale>
-#include <KDE/KIcon>
-#include <KDE/KMessageBox>
+#include <KSharedConfig>
+//#include <KGlobal>
+#include <KLocalizedString>
+//#include <KDE/KIcon>
+#include <KMessageBox>
 #include <QValidator>
 #include <QButtonGroup>
 #include <QtNetwork/QNetworkInterface>
@@ -39,6 +39,8 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <KSharedConfig>
+#include <QDialog>
+#include <QDialogButtonBox>
 
 namespace UFW
 {
@@ -422,27 +424,28 @@ static void setProfileIndex(QComboBox *combo, const QString &str)
 }
 
 RuleDialog::RuleDialog(Kcm *parent, bool isEditDlg)
-          : KDialog(parent)
+          : QDialog(parent)
           , kcm(parent)
           , isEdit(isEditDlg)
-{
+{   
     QWidget *mainWidet=new QWidget(this);
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(this);
     if(isEdit)
     {
-        setButtons(Help|Ok|Cancel);
-        setCaption(i18n("Edit Rule"));
-        setHelp("add_and_edit_rules", "ufw");
+        buttonBox->setStandardButtons(QDialogButtonBox::Help|QDialogButtonBox::Ok|QDialogButtonBox::Cancel);
+        setWindowTitle(i18n("Edit Rule"));
+       // setHelp("add_and_edit_rules", "ufw"); //KICK
     }
     else
     {
-        setButtons(Help|Apply|Close);
-        setButtonText(Apply, i18n("Add"));
-        setButtonIcon(Apply, KIcon("list-add"));
-        setCaption(i18n("Add Rule"));
-        setHelp("add_and_edit_rules", "ufw");
+        buttonBox->setStandardButtons(QDialogButtonBox::Help|QDialogButtonBox::Apply|QDialogButtonBox::Close);
+        buttonBox->button(QDialogButtonBox::Apply)->setText(i18n("Add"));
+        //setButtonIcon(Apply, KIcon("list-add")); //KICK
+        setWindowTitle(i18n("Add Rule"));
+        //setHelp("add_and_edit_rules", "ufw"); //KICK
     }
     setupUi(mainWidet);
-    setMainWidget(mainWidet);
+    setCentralWidget(mainWidet);
 
     addRuleTypes(ruleType);
     addPolicies(simplePolicy);

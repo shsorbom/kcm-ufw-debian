@@ -1316,10 +1316,15 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o
  /usr/include/KF5/KConfigWidgets/kconfigwidgets_export.h
  /usr/include/KF5/KCoreAddons/kcoreaddons_export.h
  /usr/include/KF5/KCoreAddons/kjob.h
+ /usr/include/KF5/KI18n/KLocalizedString
  /usr/include/KF5/KI18n/ki18n_export.h
  /usr/include/KF5/KI18n/klocalizedstring.h
  /usr/include/KF5/KI18n/kuitmarkup.h
+ /usr/include/KF5/KWidgetsAddons/KMessageBox
+ /usr/include/KF5/KWidgetsAddons/kguiitem.h
+ /usr/include/KF5/KWidgetsAddons/kmessagebox.h
  /usr/include/KF5/KWidgetsAddons/ksqueezedtextlabel.h
+ /usr/include/KF5/KWidgetsAddons/kstandardguiitem.h
  /usr/include/KF5/KWidgetsAddons/kwidgetsaddons_export.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QByteArray
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QChar
@@ -1419,6 +1424,7 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QIcon
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QValidator
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
@@ -1462,6 +1468,7 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialogButtonBox
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFormLayout
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGroupBox
@@ -1471,6 +1478,7 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLayout
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMessageBox
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QRadioButton
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem
@@ -1495,6 +1503,7 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialogbuttonbox.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qformlayout.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h
@@ -1505,6 +1514,7 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenu.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmessagebox.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qradiobutton.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h
