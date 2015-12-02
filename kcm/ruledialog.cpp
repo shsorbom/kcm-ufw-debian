@@ -28,6 +28,7 @@
 #include "combobox.h"
 #include <limits.h>
 #include <KSharedConfig>
+#include <KF5/KConfigCore/KConfigGroup>
 //#include <KGlobal>
 #include <KLocalizedString>
 //#include <KDE/KIcon>
@@ -243,6 +244,7 @@ static QString ifaceInformation()
 
 class PortValidator : public QValidator
 {
+    Q_OBJECT
     public:
 
     PortValidator(QObject *parent) : QValidator(parent) { }
@@ -445,7 +447,8 @@ RuleDialog::RuleDialog(Kcm *parent, bool isEditDlg)
         //setHelp("add_and_edit_rules", "ufw"); //KICK
     }
     setupUi(mainWidet);
-    setCentralWidget(mainWidet);
+    //setMainWidget(mainWidet);
+
 
     addRuleTypes(ruleType);
     addPolicies(simplePolicy);
@@ -496,7 +499,8 @@ RuleDialog::RuleDialog(Kcm *parent, bool isEditDlg)
 
     controlSimpleProtocol();
 
-    KConfigGroup grp(KSharedConfig::openConfig(), CFG_GROUP);
+    KConfigGroup grp(KSharedConfig::openConfig(), isEdit ? "KCM_UFW_EditRuleDialog" : "KCM_UFW_RuleDialog"); //??? It still doesn't work
+    // Fix is here: http://api.kde.org/frameworks-api/frameworks5-apidocs/kconfig/html/classKSharedConfig.html#a328208649f2e3f0ee895c9b11aa82205
     int          rt=grp.readEntry(CFG_RULE_TYPE, (int)0);
 
     ruleType->setCurrentIndex(RT_SIMPLE==rt || RT_ADVANCED==rt ? rt : RT_SIMPLE);
@@ -507,6 +511,7 @@ RuleDialog::RuleDialog(Kcm *parent, bool isEditDlg)
     advancedSrcPort->setValidator(new PortValidator(this));
     advancedDestHost->setValidator(new IpAddressValidator(this));
     advancedSrcHost->setValidator(new IpAddressValidator(this));
+
     advancedInterface->setEditable(true);
     advancedInterface->setEditText(advancedInterface->itemText(0));
     advancedInterface->setValidator(new IfaceValidator(this));
@@ -620,10 +625,12 @@ void RuleDialog::reset()
     simpleLogging->setCurrentIndex(Types::LOGGING_OFF);
     advancedPolicy->setCurrentIndex(Types::POLICY_DENY);
     advancedDirection->setCurrentIndex(DIR_IN);
+    /* //Kick
     advancedSrcHost->setText(QString());
     advancedSrcPort->setText(QString());
     advancedDestHost->setText(QString());
     advancedDestPort->setText(QString());
+    */
     advancedProtocol->setCurrentIndex(Types::PROTO_BOTH);
     advancedLogging->setCurrentIndex(Types::LOGGING_OFF);
     advancedInterface->setEditText(advancedInterface->itemText(0));
@@ -833,7 +840,7 @@ void RuleDialog::update()
                                         advancedIndexToPredefinedPort.contains(advancedDestProfile->currentIndex());
             QString srcApp=!srcIsPreDefined && advancedSrcProfileRadio->isChecked() ? getProfileName(advancedSrcProfile->currentText()) : QString(),
                     destApp=!destIsPreDefined && advancedDestProfileRadio->isChecked() ? getProfileName(advancedDestProfile->currentText()) : QString(),
-                    srcHost=advancedSrcAnyHostRadio->isChecked() ? QString() : advancedSrcHost->text(),
+                   QString srcHost=advancedSrcAnyHostRadio->isChecked() ? QString() : advancedSrcHost->text(),
                     srcPort=!srcIsPreDefined && advancedSrcPortRadio->isChecked() ? advancedSrcPort->text() : QString(),
                     destHost=advancedDestAnyHostRadio->isChecked() ? QString() : advancedDestHost->text(),
                     destPort=!destIsPreDefined && advancedDestPortRadio->isChecked() ? advancedDestPort->text() : QString();

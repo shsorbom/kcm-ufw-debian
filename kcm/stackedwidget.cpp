@@ -22,14 +22,14 @@
  */
 
 #include "stackedwidget.h"
-#include <KDE/KIcon>
-#include <KDE/KIconEffect>
+//#include <KDE/KIcon>
+//#include <KDE/KIconEffect>
 #include <QPixmap>
 #include <QPainter>
 
 namespace UFW
 {
-
+// I think we can ignore this for now
 static const int constIconSize = 192;
 static const int constBorder   = 0;
 

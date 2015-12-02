@@ -93,7 +93,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_5">
+          <widget class="QLineEdit" name="simplePort">
            <property name="enabled">
             <bool>false</bool>
            </property>
@@ -183,7 +183,7 @@
             <item row="0" column="1">
              <widget class="QRadioButton" name="advancedSrcAnyHostRadio">
               <property name="text">
-               <string>Any address</string>
+               <string>An&amp;y address</string>
               </property>
               <property name="checked">
                <bool>true</bool>
@@ -206,7 +206,7 @@
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit">
+               <widget class="QLineEdit" name="advancedSrcHost">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -250,7 +250,7 @@
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_2">
+               <widget class="QLineEdit" name="advancedSrcPort">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -336,7 +336,7 @@
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_3">
+               <widget class="QLineEdit" name="advancedDestHost">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -370,7 +370,7 @@
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_4">
+               <widget class="QLineEdit" name="advancedDestPort">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>

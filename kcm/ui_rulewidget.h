@@ -51,7 +51,7 @@ public:
     QLabel *label_13;
     QHBoxLayout *horizontalLayout_3x;
     QRadioButton *simplePortRadio;
-    QLineEdit *lineEdit_5;
+    QLineEdit *simplePort;
     QLabel *label_14;
     QHBoxLayout *horizontalLayout_5x;
     QRadioButton *simpleProfileRadio;
@@ -69,12 +69,12 @@ public:
     QRadioButton *advancedSrcAnyHostRadio;
     QHBoxLayout *horizontalLayout_6xa;
     QRadioButton *advancedSrcHostRadio;
-    QLineEdit *lineEdit;
+    QLineEdit *advancedSrcHost;
     QRadioButton *advancedSrcAnyPortRadio;
     QLabel *label_8x;
     QHBoxLayout *horizontalLayout_4x;
     QRadioButton *advancedSrcPortRadio;
-    QLineEdit *lineEdit_2;
+    QLineEdit *advancedSrcPort;
     QHBoxLayout *horizontalLayout_6x;
     QRadioButton *advancedSrcProfileRadio;
     UFW::ComboBox *advancedSrcProfile;
@@ -84,11 +84,11 @@ public:
     QRadioButton *advancedDestAnyHostRadio;
     QHBoxLayout *horizontalLayout_6xb;
     QRadioButton *advancedDestHostRadio;
-    QLineEdit *lineEdit_3;
+    QLineEdit *advancedDestHost;
     QRadioButton *advancedDestAnyPortRadio;
     QHBoxLayout *horizontalLayout_4;
     QRadioButton *advancedDestPortRadio;
-    QLineEdit *lineEdit_4;
+    QLineEdit *advancedDestPort;
     QHBoxLayout *horizontalLayout_6;
     QRadioButton *advancedDestProfileRadio;
     UFW::ComboBox *advancedDestProfile;
@@ -177,11 +177,11 @@ public:
 
         horizontalLayout_3x->addWidget(simplePortRadio);
 
-        lineEdit_5 = new QLineEdit(page_2);
-        lineEdit_5->setObjectName(QStringLiteral("lineEdit_5"));
-        lineEdit_5->setEnabled(false);
+        simplePort = new QLineEdit(page_2);
+        simplePort->setObjectName(QStringLiteral("simplePort"));
+        simplePort->setEnabled(false);
 
-        horizontalLayout_3x->addWidget(lineEdit_5);
+        horizontalLayout_3x->addWidget(simplePort);
 
 
         formLayout->setLayout(2, QFormLayout::FieldRole, horizontalLayout_3x);
@@ -263,12 +263,12 @@ public:
 
         horizontalLayout_6xa->addWidget(advancedSrcHostRadio);
 
-        lineEdit = new QLineEdit(groupBox_3x);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
-        lineEdit->setEnabled(false);
-        lineEdit->setClearButtonEnabled(false);
+        advancedSrcHost = new QLineEdit(groupBox_3x);
+        advancedSrcHost->setObjectName(QStringLiteral("advancedSrcHost"));
+        advancedSrcHost->setEnabled(false);
+        advancedSrcHost->setClearButtonEnabled(false);
 
-        horizontalLayout_6xa->addWidget(lineEdit);
+        horizontalLayout_6xa->addWidget(advancedSrcHost);
 
 
         formLayout_4x->setLayout(1, QFormLayout::FieldRole, horizontalLayout_6xa);
@@ -293,11 +293,11 @@ public:
 
         horizontalLayout_4x->addWidget(advancedSrcPortRadio);
 
-        lineEdit_2 = new QLineEdit(groupBox_3x);
-        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
-        lineEdit_2->setEnabled(false);
+        advancedSrcPort = new QLineEdit(groupBox_3x);
+        advancedSrcPort->setObjectName(QStringLiteral("advancedSrcPort"));
+        advancedSrcPort->setEnabled(false);
 
-        horizontalLayout_4x->addWidget(lineEdit_2);
+        horizontalLayout_4x->addWidget(advancedSrcPort);
 
 
         formLayout_4x->setLayout(3, QFormLayout::FieldRole, horizontalLayout_4x);
@@ -354,11 +354,11 @@ public:
 
         horizontalLayout_6xb->addWidget(advancedDestHostRadio);
 
-        lineEdit_3 = new QLineEdit(groupBox_3);
-        lineEdit_3->setObjectName(QStringLiteral("lineEdit_3"));
-        lineEdit_3->setEnabled(false);
+        advancedDestHost = new QLineEdit(groupBox_3);
+        advancedDestHost->setObjectName(QStringLiteral("advancedDestHost"));
+        advancedDestHost->setEnabled(false);
 
-        horizontalLayout_6xb->addWidget(lineEdit_3);
+        horizontalLayout_6xb->addWidget(advancedDestHost);
 
 
         formLayout_4->setLayout(1, QFormLayout::FieldRole, horizontalLayout_6xb);
@@ -378,11 +378,11 @@ public:
 
         horizontalLayout_4->addWidget(advancedDestPortRadio);
 
-        lineEdit_4 = new QLineEdit(groupBox_3);
-        lineEdit_4->setObjectName(QStringLiteral("lineEdit_4"));
-        lineEdit_4->setEnabled(false);
+        advancedDestPort = new QLineEdit(groupBox_3);
+        advancedDestPort->setObjectName(QStringLiteral("advancedDestPort"));
+        advancedDestPort->setEnabled(false);
 
-        horizontalLayout_4->addWidget(lineEdit_4);
+        horizontalLayout_4->addWidget(advancedDestPort);
 
 
         formLayout_4->setLayout(3, QFormLayout::FieldRole, horizontalLayout_4);
@@ -513,7 +513,7 @@ public:
         label_10->setText(tr2i18n("Direction:", 0));
         groupBox_3x->setTitle(tr2i18n("Source", 0));
         label_5x->setText(tr2i18n("Address:", 0));
-        advancedSrcAnyHostRadio->setText(tr2i18n("Any address", 0));
+        advancedSrcAnyHostRadio->setText(tr2i18n("An&y address", 0));
         advancedSrcHostRadio->setText(QString());
         advancedSrcAnyPortRadio->setText(tr2i18n("Any port", 0));
         label_8x->setText(tr2i18n("Port:", 0));

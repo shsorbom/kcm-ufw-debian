@@ -29,5 +29,7 @@ target_link_libraries(kcm_ufw
                       )
 install( TARGETS kcm_ufw  DESTINATION ${PLUGIN_INSTALL_DIR} )
 install( FILES ufw.desktop  DESTINATION  ${SERVICES_INSTALL_DIR} )
+install( FILES ufw.ui rulewidget.ui  DESTINATION  ${KXMLGUI_INSTALL_DIR} )
+
 
 #kde4_install_icons( ${DATA_INSTALL_DIR}/kufw/icons )

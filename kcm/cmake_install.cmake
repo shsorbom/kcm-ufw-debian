@@ -56,3 +56,10 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "kcm_ufw
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kservices5" TYPE FILE FILES "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/ufw.desktop")
 endif()
 
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "kcm_ufw")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kxmlgui5" TYPE FILE FILES
+    "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/ufw.ui"
+    "/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/rulewidget.ui"
+    )
+endif()
+
