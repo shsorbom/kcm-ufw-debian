@@ -21,11 +21,11 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QRadioButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include <lineedit.h>
 #include "combobox.h"
 #include "ksqueezedtextlabel.h"
 #include "stackedwidget.h"
@@ -51,7 +51,7 @@ public:
     QLabel *label_13;
     QHBoxLayout *horizontalLayout_3x;
     QRadioButton *simplePortRadio;
-    QLineEdit *simplePort;
+    UFW::LineEdit *simplePort;
     QLabel *label_14;
     QHBoxLayout *horizontalLayout_5x;
     QRadioButton *simpleProfileRadio;
@@ -69,12 +69,12 @@ public:
     QRadioButton *advancedSrcAnyHostRadio;
     QHBoxLayout *horizontalLayout_6xa;
     QRadioButton *advancedSrcHostRadio;
-    QLineEdit *advancedSrcHost;
+    UFW::LineEdit *advancedSrcHost;
     QRadioButton *advancedSrcAnyPortRadio;
     QLabel *label_8x;
     QHBoxLayout *horizontalLayout_4x;
     QRadioButton *advancedSrcPortRadio;
-    QLineEdit *advancedSrcPort;
+    UFW::LineEdit *advancedSrcPort;
     QHBoxLayout *horizontalLayout_6x;
     QRadioButton *advancedSrcProfileRadio;
     UFW::ComboBox *advancedSrcProfile;
@@ -84,11 +84,11 @@ public:
     QRadioButton *advancedDestAnyHostRadio;
     QHBoxLayout *horizontalLayout_6xb;
     QRadioButton *advancedDestHostRadio;
-    QLineEdit *advancedDestHost;
+    UFW::LineEdit *advancedDestHost;
     QRadioButton *advancedDestAnyPortRadio;
     QHBoxLayout *horizontalLayout_4;
     QRadioButton *advancedDestPortRadio;
-    QLineEdit *advancedDestPort;
+    UFW::LineEdit *advancedDestPort;
     QHBoxLayout *horizontalLayout_6;
     QRadioButton *advancedDestProfileRadio;
     UFW::ComboBox *advancedDestProfile;
@@ -177,7 +177,7 @@ public:
 
         horizontalLayout_3x->addWidget(simplePortRadio);
 
-        simplePort = new QLineEdit(page_2);
+        simplePort = new UFW::LineEdit(page_2);
         simplePort->setObjectName(QStringLiteral("simplePort"));
         simplePort->setEnabled(false);
 
@@ -263,7 +263,7 @@ public:
 
         horizontalLayout_6xa->addWidget(advancedSrcHostRadio);
 
-        advancedSrcHost = new QLineEdit(groupBox_3x);
+        advancedSrcHost = new UFW::LineEdit(groupBox_3x);
         advancedSrcHost->setObjectName(QStringLiteral("advancedSrcHost"));
         advancedSrcHost->setEnabled(false);
         advancedSrcHost->setClearButtonEnabled(false);
@@ -293,7 +293,7 @@ public:
 
         horizontalLayout_4x->addWidget(advancedSrcPortRadio);
 
-        advancedSrcPort = new QLineEdit(groupBox_3x);
+        advancedSrcPort = new UFW::LineEdit(groupBox_3x);
         advancedSrcPort->setObjectName(QStringLiteral("advancedSrcPort"));
         advancedSrcPort->setEnabled(false);
 
@@ -354,7 +354,7 @@ public:
 
         horizontalLayout_6xb->addWidget(advancedDestHostRadio);
 
-        advancedDestHost = new QLineEdit(groupBox_3);
+        advancedDestHost = new UFW::LineEdit(groupBox_3);
         advancedDestHost->setObjectName(QStringLiteral("advancedDestHost"));
         advancedDestHost->setEnabled(false);
 
@@ -378,7 +378,7 @@ public:
 
         horizontalLayout_4->addWidget(advancedDestPortRadio);
 
-        advancedDestPort = new QLineEdit(groupBox_3);
+        advancedDestPort = new UFW::LineEdit(groupBox_3);
         advancedDestPort->setObjectName(QStringLiteral("advancedDestPort"));
         advancedDestPort->setEnabled(false);
 
@@ -494,7 +494,7 @@ public:
         QObject::connect(advancedSrcProfileRadio, SIGNAL(toggled(bool)), advancedSrcProfile, SLOT(setEnabled(bool)));
         QObject::connect(advancedDestProfileRadio, SIGNAL(toggled(bool)), advancedDestProfile, SLOT(setEnabled(bool)));
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(RuleWidget);
@@ -515,7 +515,7 @@ public:
         label_5x->setText(tr2i18n("Address:", 0));
         advancedSrcAnyHostRadio->setText(tr2i18n("An&y address", 0));
         advancedSrcHostRadio->setText(QString());
-        advancedSrcAnyPortRadio->setText(tr2i18n("Any port", 0));
+        advancedSrcAnyPortRadio->setText(tr2i18n("A&ny port", 0));
         label_8x->setText(tr2i18n("Port:", 0));
         advancedSrcPortRadio->setText(QString());
         advancedSrcProfileRadio->setText(QString());

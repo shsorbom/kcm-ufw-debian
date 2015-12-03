@@ -553,6 +553,7 @@ kcm/CMakeFiles/kcm_ufw.dir/kcm.cpp.o
  /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64/qplatformdefs.h
  /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qplatformdefs.h
  config.h
+ kcm/lineedit.h
 kcm/CMakeFiles/kcm_ufw.dir/kcm_ufw_automoc.cpp.o
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/blocker.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/combobox.h
@@ -780,6 +781,7 @@ kcm/CMakeFiles/kcm_ufw.dir/kcm_ufw_automoc.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreewidget.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreewidgetitemiterator.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
+ kcm/lineedit.h
 kcm/CMakeFiles/kcm_ufw.dir/lineedit.cpp.o
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/lineedit.cpp
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/lineedit.h
@@ -1530,6 +1532,7 @@ kcm/CMakeFiles/kcm_ufw.dir/ruledialog.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreewidget.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreewidgetitemiterator.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
+ kcm/lineedit.h
 kcm/CMakeFiles/kcm_ufw.dir/ruleslist.cpp.o
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/rule.h
  /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/ruleslist.cpp

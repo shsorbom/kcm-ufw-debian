@@ -93,7 +93,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="simplePort">
+          <widget class="UFW::LineEdit" name="simplePort">
            <property name="enabled">
             <bool>false</bool>
            </property>
@@ -206,7 +206,7 @@
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="advancedSrcHost">
+               <widget class="UFW::LineEdit" name="advancedSrcHost">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -220,7 +220,7 @@
             <item row="2" column="1">
              <widget class="QRadioButton" name="advancedSrcAnyPortRadio">
               <property name="text">
-               <string>Any port</string>
+               <string>A&amp;ny port</string>
               </property>
               <property name="checked">
                <bool>true</bool>
@@ -250,7 +250,7 @@
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="advancedSrcPort">
+               <widget class="UFW::LineEdit" name="advancedSrcPort">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -336,7 +336,7 @@
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="advancedDestHost">
+               <widget class="UFW::LineEdit" name="advancedDestHost">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -370,7 +370,7 @@
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="advancedDestPort">
+               <widget class="UFW::LineEdit" name="advancedDestPort">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -495,6 +495,11 @@
    <extends>QStackedWidget</extends>
    <header>stackedwidget.h</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>UFW::LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">lineedit.h</header>
   </customwidget>
  </customwidgets>
  <tabstops>
