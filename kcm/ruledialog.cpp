@@ -625,12 +625,12 @@ void RuleDialog::reset()
     simpleLogging->setCurrentIndex(Types::LOGGING_OFF);
     advancedPolicy->setCurrentIndex(Types::POLICY_DENY);
     advancedDirection->setCurrentIndex(DIR_IN);
-    /* //Kick
+     //Kick
     advancedSrcHost->setText(QString());
     advancedSrcPort->setText(QString());
     advancedDestHost->setText(QString());
     advancedDestPort->setText(QString());
-    */
+
     advancedProtocol->setCurrentIndex(Types::PROTO_BOTH);
     advancedLogging->setCurrentIndex(Types::LOGGING_OFF);
     advancedInterface->setEditText(advancedInterface->itemText(0));
