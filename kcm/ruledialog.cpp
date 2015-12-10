@@ -213,13 +213,13 @@ static void setRulePort(const QString &port, Types::Protocol prot, QRadioButton 
 
 static void addInterfaces(QComboBox *combo)
 {
-    QList<QNetworkInterface>                interfaces(QNetworkInterface::allInterfaces());
-    QList<QNetworkInterface>::ConstIterator it(interfaces.constBegin()),
-                                            end(interfaces.constEnd());
+    //QList<QNetworkInterface>                interfaces(QNetworkInterface::allInterfaces());
+   // QList<QNetworkInterface>::ConstIterator it(interfaces.constBegin()),
+                                            //end(interfaces.constEnd()); //Kick
 
     combo->insertItem(0, i18n("Any interface"));
-    for (; it!=end; ++it)
-        combo->insertItem(combo->count(), it->name());
+    /* for (; it!=end; ++it)
+        combo->insertItem(combo->count(), it->name());*/
 }
 
 static QString portInformation()

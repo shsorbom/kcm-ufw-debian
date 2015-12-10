@@ -591,7 +591,7 @@ class ProfileNameValidator : public QValidator
 
 void Kcm::saveProfile()
 {
-    QString name=getNewProfileName(loadedProfile, false);
+    QString name=/*getNewProfileName(loadedProfile, false);*/ ""; //Kick
 
     if(!name.isEmpty())
     {
@@ -1146,7 +1146,7 @@ void Kcm::setupWidgets()
     ruleList->viewport()->setAcceptDrops(true);
     ruleList->setDropIndicatorShown(true);
     ruleList->setDragDropMode(QAbstractItemView::InternalMove);
-    listUserProfiles();
+    //listUserProfiles();
     profilesButton->setPopupMode(QToolButton::InstantPopup);
 
     connect(loadMenu, SIGNAL(triggered(QAction *)), SLOT(loadProfile(QAction *)));

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE policyconfig PUBLIC
+"-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+"http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+<vendor>Uncomplicated Firewall</vendor>
+<icon_name>security-high</icon_name>
+   <action id="org.kde.ufw.modify" >
+      <description xml:lang="de">Firewall bearbeiten</description>
+      <description xml:lang="pt_BR">Modificar o firewall</description>
+      <description xml:lang="sv">Ändra brandväggen</description>
+      <description xml:lang="fr">Modifier le pare-feu</description>
+      <description xml:lang="ca">Modificació del tallafocs</description>
+      <description>Modify Firewall</description>
+      <description xml:lang="ko">방화벽 수정</description>
+      <description xml:lang="es">Modificar el cortafuegos</description>
+      <description xml:lang="pl">Zmodyfikuj zaporę ogniową</description>
+      <description xml:lang="uk">Змінити параметри брандмауера</description>
+      <description xml:lang="pt">Modificar a 'Firewall'</description>
+      <description xml:lang="cs">Upravit firewall</description>
+      <description xml:lang="nl">Firewall wijzigen</description>
+      <description xml:lang="gl">Modificar a devasa</description>
+      <description xml:lang="bs">promijeni odbrambeni zid</description>
+      <description xml:lang="sk">Zmeniť firewall</description>
+      <description xml:lang="tr">Güvenlik Duvarını Değiştir</description>
+      <description xml:lang="fi">Muokkaa palomuuria</description>
+      <description xml:lang="hu">Tűzfal módosítása</description>
+      <message xml:lang="de">Firewall-Einstellungen bearbeiten</message>
+      <message xml:lang="pt_BR">Modificar as configurações do firewall</message>
+      <message xml:lang="sv">Ändra brandväggens inställningar</message>
+      <message xml:lang="fr">Modifier les paramètres du pare-feu</message>
+      <message xml:lang="ca">Modificació dels ajustaments del tallafocs</message>
+      <message>Modify firewall settings</message>
+      <message xml:lang="ko">방화벽 설정 수정</message>
+      <message xml:lang="es">Modificar las preferencias del cortafuegos</message>
+      <message xml:lang="pl">Zmodyfikuj ustawienia zapory ogniowej</message>
+      <message xml:lang="uk">Змінити параметри роботи брандмауера</message>
+      <message xml:lang="pt">Modificar a configuração da 'firewall'</message>
+      <message xml:lang="cs">Upravit nastavení firewallu</message>
+      <message xml:lang="nl">Firewall-instellingen wijzigen</message>
+      <message xml:lang="gl">Cambia a configuración da devasa</message>
+      <message xml:lang="bs">promijeni postavke za odbrambeni zid</message>
+      <message xml:lang="sk">Zmeniť nastavenia firewallu</message>
+      <message xml:lang="tr">Güvenlik duvarı ayarlarını değiştir</message>
+      <message xml:lang="fi">Muuta palomuurin asetuksia</message>
+      <message xml:lang="hu">Tűzfalbeállítások módosítása</message>
+      <defaults>
+         <allow_inactive>no</allow_inactive>
+         <allow_active>auth_admin_keep</allow_active>
+      </defaults>
+   </action>
+   <action id="org.kde.ufw.query" >
+      <description xml:lang="de">Firewall abfragen</description>
+      <description xml:lang="pt_BR">Pesquisa no firewall</description>
+      <description xml:lang="sv">Fråga brandvägg</description>
+      <description xml:lang="fr">Interroger le pare-feu</description>
+      <description xml:lang="ca">Consulta el tallafocs</description>
+      <description>Query Firewall</description>
+      <description xml:lang="ko">방화벽 질의</description>
+      <description xml:lang="es">Consultar el cortafuegos</description>
+      <description xml:lang="pl">Odpytaj zaporę ogniową</description>
+      <description xml:lang="uk">Надіслати запит до брандмауера</description>
+      <description xml:lang="pt">Consultar a 'Firewall'</description>
+      <description xml:lang="cs">Dotázat se firewallu</description>
+      <description xml:lang="nl">Firewall afvragen</description>
+      <description xml:lang="gl">Consultar a devasa</description>
+      <description xml:lang="bs">upit Firewall</description>
+      <description xml:lang="sk">Dotaz na firewall</description>
+      <description xml:lang="tr">Sorgu Güvenlik Duvarı</description>
+      <description xml:lang="fi">Kysele palomuuria</description>
+      <description xml:lang="hu">Tűzfal lekérdezése</description>
+      <message xml:lang="de">Firewallstatus abfragen</message>
+      <message xml:lang="pt_BR">Status da pesquisa no firewall</message>
+      <message xml:lang="sv">Fråga om brandväggens status</message>
+      <message xml:lang="fr">Interroger le pare-feu sur son état</message>
+      <message xml:lang="ca">Consulta l'estat del tallafocs</message>
+      <message>Query firewall status</message>
+      <message xml:lang="ko">방화벽 상태 질의</message>
+      <message xml:lang="es">Consultar el estado del cortafuegos</message>
+      <message xml:lang="pl">Odpytaj stan zapory ogniowej</message>
+      <message xml:lang="uk">Стан запиту до брандмауера</message>
+      <message xml:lang="pt">Consultar o estado da 'firewall'</message>
+      <message xml:lang="cs">Dotázat se na stav firewallu</message>
+      <message xml:lang="nl">Status van firewall afvragen</message>
+      <message xml:lang="gl">Estado da consulta á devasa</message>
+      <message xml:lang="bs">Upit za  Firewall postavke</message>
+      <message xml:lang="sk">Dotaz na stav firewallu</message>
+      <message xml:lang="tr">Sorgu güvenlik duvarı durumu</message>
+      <message xml:lang="fi">Kysele palomuurin tilaa</message>
+      <message xml:lang="hu">Tűzfalállapot lekérdezése</message>
+      <defaults>
+         <allow_inactive>no</allow_inactive>
+         <allow_active>yes</allow_active>
+      </defaults>
+   </action>
+   <action id="org.kde.ufw.viewlog" >
+      <description xml:lang="de">Firewall-Protokolle anzeigen</description>
+      <description xml:lang="pt_BR">Exibir os registros do firewall</description>
+      <description xml:lang="sv">Visa brandväggens loggar</description>
+      <description xml:lang="fr">Afficher les messages du pare-feu</description>
+      <description xml:lang="ca">Veure els registres del tallafocs</description>
+      <description>View Firewall Logs</description>
+      <description xml:lang="ko">방화벽 기록 보기</description>
+      <description xml:lang="es">Ver los registros del cortafuegos</description>
+      <description xml:lang="pl">Obejrzyj dzienniki zapory ogniowej</description>
+      <description xml:lang="uk">Переглянути журнал брандмауера</description>
+      <description xml:lang="pt">Ver os Registos da 'Firewall'</description>
+      <description xml:lang="cs">Zobrazit záznamy firewallu</description>
+      <description xml:lang="nl">Firewall-logs bekijken</description>
+      <description xml:lang="gl">Ver os rexistros da devasa</description>
+      <description xml:lang="bs">Vidi  Firewall Zapise</description>
+      <description xml:lang="sk">Zobraziť záznamy firewallu</description>
+      <description xml:lang="tr">Güvenlik Duvarı Günlüklerini Görüntüle</description>
+      <description xml:lang="fi">Näytä palomuurin lokit</description>
+      <description xml:lang="hu">Tűzfalnaplók megtekintése</description>
+      <message xml:lang="de">Firewall-Protokolle anzeigen</message>
+      <message xml:lang="pt_BR">Exibe os registros do firewall</message>
+      <message xml:lang="sv">Visa brandväggens loggar</message>
+      <message xml:lang="fr">Afficher les messages du pare-feu</message>
+      <message xml:lang="ca">Visualitza els registres del tallafocs</message>
+      <message>View firewall logs</message>
+      <message xml:lang="ko">방화벽 기록 보기</message>
+      <message xml:lang="es">Ver los registros del cortafuegos</message>
+      <message xml:lang="pl">Obejrzyj dzienniki zapory ogniowej</message>
+      <message xml:lang="uk">Переглянути журнал роботи брандмауера</message>
+      <message xml:lang="pt">Ver os registos da 'firewall'</message>
+      <message xml:lang="cs">Zobrazit záznamy firewallu</message>
+      <message xml:lang="nl">Firewall-logs bekijken</message>
+      <message xml:lang="gl">Visualiza o historial da devasa</message>
+      <message xml:lang="bs">vidi fireval zapise</message>
+      <message xml:lang="sk">Zobraziť záznamy firewallu</message>
+      <message xml:lang="tr">Güvenlik duvarı günlüklerini görüntüle</message>
+      <message xml:lang="fi">Näytä palomuurin lokit</message>
+      <message xml:lang="hu">Tűzfalnaplók megtekintése</message>
+      <defaults>
+         <allow_inactive>no</allow_inactive>
+         <allow_active>yes</allow_active>
+      </defaults>
+   </action>
+</policyconfig>
