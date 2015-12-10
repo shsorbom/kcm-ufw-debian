@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=kcmshell4 ufw
+Exec=kcmshell5 ufw
 Icon=security-high
 Type=Service
 X-KDE-ServiceTypes=KCModule
