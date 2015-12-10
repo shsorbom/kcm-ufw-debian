@@ -1,9 +1,0 @@
-# Hashes of file build rules.
-847d16697d5b1a6317af26698ce378a4 CMakeFiles/uninstall
-8354be5f2c2bae0d88276c950c22a4f0 helper/CMakeFiles/actions for org.kde.ufw
-137dc0c4067927b6477f2214c680a4c9 helper/CMakeFiles/kcm_ufw_helper_automoc
-90a5aa76767c903f24d686b5fc8e639a helper/org.kde.ufw.policy
-140b24dc30a32914d6e4d2672ac32e3e kcm/CMakeFiles/kcm_ufw_automoc
-6e988e790b5bf2d7ef95bfaba26c48e8 kcm/ui_rulewidget.h
-d45b45bb8fcd88cac78630278bcb8504 kcm/ui_ufw.h
-be9831be5d95f058919f4edf2e60fcdb po/CMakeFiles/translations

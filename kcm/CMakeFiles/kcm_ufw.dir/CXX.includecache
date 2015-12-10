@@ -12,9 +12,19 @@ QList
 QString
 -
 
+/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/blocker.cpp
+blocker.h
+/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/blocker.h
+QEvent
+-
+blocker.moc
+/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/blocker.moc
+
 /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/blocker.h
 QObject
 -
+
+/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/blocker.moc
 
 /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/combobox.h
 QComboBox
@@ -128,20 +138,6 @@ moc_ruledialog.cpp
 moc_ruleslist.cpp
 /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/moc_ruleslist.cpp
 
-/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/lineedit.cpp
-lineedit.h
-/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/lineedit.h
-QEvent
--
-QMouseEvent
--
-QRadioButton
--
-
-/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/lineedit.h
-QLineEdit
--
-
 /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/logviewer.cpp
 logviewer.h
 /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/logviewer.h
@@ -151,19 +147,19 @@ rule.h
 /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/rule.h
 kcm.h
 /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/kcm.h
-kdeversion.h
+QAction
 -
-KDE/KAction
+QToolBar
 -
-KDE/KToolBar
+KConfig
 -
-KDE/KConfig
+KConfigGroup
 -
-KDE/KConfigGroup
+QDialogButtonBox
 -
-KDE/KGlobal
+QLocale
 -
-KDE/KLocale
+KLocalizedString
 -
 QVBoxLayout
 -
@@ -273,6 +269,8 @@ QButtonGroup
 -
 QtNetwork/QNetworkInterface
 -
+qt5/QtNetwork/QNetworkInterface
+-
 sys/types.h
 -
 sys/socket.h
@@ -309,13 +307,11 @@ QtCore/qmetatype.h
 /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/ruleslist.cpp
 ruleslist.h
 /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/ruleslist.h
-KDE/KConfig
+KSharedConfig
 -
-KDE/KConfigGroup
+KConfigGroup
 -
-KDE/KGlobal
--
-KDE/KLocale
+KLocalizedString
 -
 QTimer
 -
@@ -335,14 +331,6 @@ QTreeWidget
 -
 
 /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/ruleslist.moc
-
-/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/stackedwidget.cpp
-stackedwidget.h
-/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/stackedwidget.h
-QPixmap
--
-QPainter
--
 
 /home/shawn/Projects/qt_practicum/kcm_ufw/kcm/stackedwidget.h
 QStackedWidget
@@ -508,9 +496,31 @@ QtCore/QVariant
 kauth_export.h
 -
 
+/usr/include/KF5/KConfigCore/KConfig
+kconfig.h
+/usr/include/KF5/KConfigCore/kconfig.h
+
+/usr/include/KF5/KConfigCore/KConfigGroup
+kconfiggroup.h
+/usr/include/KF5/KConfigCore/kconfiggroup.h
+
 /usr/include/KF5/KConfigCore/KSharedConfig
 ksharedconfig.h
 /usr/include/KF5/KConfigCore/ksharedconfig.h
+
+/usr/include/KF5/KConfigCore/conversioncheck.h
+QtCore/QString
+-
+QtCore/QDate
+-
+QtCore/QPoint
+-
+QtCore/QSize
+-
+QtCore/QRect
+-
+QtCore/QVariant
+-
 
 /usr/include/KF5/KConfigCore/kconfig.h
 kconfigbase.h
@@ -535,6 +545,20 @@ QtCore/QtGlobal
 -
 
 /usr/include/KF5/KConfigCore/kconfigcore_export.h
+
+/usr/include/KF5/KConfigCore/kconfiggroup.h
+kconfigbase.h
+/usr/include/KF5/KConfigCore/kconfigbase.h
+kconfigcore_export.h
+-
+QtCore/QExplicitlySharedDataPointer
+-
+QtCore/QVariant
+-
+QtCore/QStringList
+-
+conversioncheck.h
+/usr/include/KF5/KConfigCore/conversioncheck.h
 
 /usr/include/KF5/KConfigCore/ksharedconfig.h
 kconfig.h
@@ -856,6 +880,10 @@ qchar.h
 qdatastream.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QDate
+qdatetime.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
 qdatetime.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
@@ -884,6 +912,10 @@ qchar.h
 qlist.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QLocale
+qlocale.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap
 qmap.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h
@@ -904,6 +936,14 @@ qpair.h
 qpluginloader.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qpluginloader.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QPoint
+qpoint.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QRect
+qrect.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QSet
 qset.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h
@@ -915,6 +955,10 @@ qshareddata.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QSharedDataPointer
 qshareddata.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QSize
+qsize.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QStandardPaths
 qstandardpaths.h
@@ -1774,14 +1818,6 @@ qevent.h
 qicon.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h
 
-/usr/include/x86_64-linux-gnu/qt5/QtGui/QMouseEvent
-qevent.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter
-qpainter.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h
-
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QPalette
 qpalette.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h
@@ -1954,36 +1990,6 @@ QtCore/qrect.h
 QtGui/qwindowdefs.h
 -
 QtCore/qrect.h
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h
-QtCore/qnamespace.h
--
-QtCore/qrect.h
--
-QtCore/qpoint.h
--
-QtCore/qscopedpointer.h
--
-QtGui/qpixmap.h
--
-QtGui/qimage.h
--
-QtGui/qtextoption.h
--
-QtGui/qpolygon.h
--
-QtGui/qpen.h
--
-QtGui/qbrush.h
--
-QtGui/qmatrix.h
--
-QtGui/qtransform.h
--
-QtGui/qfontinfo.h
--
-QtGui/qfontmetrics.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h
@@ -2271,6 +2277,10 @@ qstackedwidget.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTabWidget
 qtabwidget.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QToolBar
+qtoolbar.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtoolbar.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QToolButton
 qtoolbutton.h
@@ -2570,6 +2580,10 @@ QtWidgets/qwidget.h
 QtWidgets/qwidget.h
 -
 QtGui/qicon.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtoolbar.h
+QtWidgets/qwidget.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtoolbutton.h

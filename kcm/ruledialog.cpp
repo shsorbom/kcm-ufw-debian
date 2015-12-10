@@ -36,6 +36,7 @@
 #include <QValidator>
 #include <QButtonGroup>
 #include <QtNetwork/QNetworkInterface>
+#include <qt5/QtNetwork/QNetworkInterface>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
@@ -840,7 +841,7 @@ void RuleDialog::update()
                                         advancedIndexToPredefinedPort.contains(advancedDestProfile->currentIndex());
             QString srcApp=!srcIsPreDefined && advancedSrcProfileRadio->isChecked() ? getProfileName(advancedSrcProfile->currentText()) : QString(),
                     destApp=!destIsPreDefined && advancedDestProfileRadio->isChecked() ? getProfileName(advancedDestProfile->currentText()) : QString(),
-                   QString srcHost=advancedSrcAnyHostRadio->isChecked() ? QString() : advancedSrcHost->text(),
+                   /*QString*/ srcHost=advancedSrcAnyHostRadio->isChecked() ? QString() : advancedSrcHost->text(),
                     srcPort=!srcIsPreDefined && advancedSrcPortRadio->isChecked() ? advancedSrcPort->text() : QString(),
                     destHost=advancedDestAnyHostRadio->isChecked() ? QString() : advancedDestHost->text(),
                     destPort=!destIsPreDefined && advancedDestPortRadio->isChecked() ? advancedDestPort->text() : QString();

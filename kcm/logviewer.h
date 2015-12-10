@@ -29,7 +29,7 @@
 #include <QString>
 
 class QTreeWidget;
-class KAction;
+class QAction;
 
 using namespace KAuth;
 
@@ -68,7 +68,7 @@ class LogViewer : public QDialog
     Action      viewAction;
     QString     lastLine;
     QTreeWidget *list;
-    KAction     *toggleRawAction,
+    QAction     *toggleRawAction,
                 *createRuleAction;
     bool        headerSizesSet;
 };

@@ -25,13 +25,15 @@
 #include "types.h"
 #include "rule.h"
 #include "kcm.h"
-#include <kdeversion.h>
-#include <KDE/KAction>
-#include <KDE/KToolBar>
-#include <KDE/KConfig>
-#include <KDE/KConfigGroup>
-#include <KDE/KGlobal>
-#include <KDE/KLocale>
+//#include <kdeversion.h>
+#include <QAction>
+#include <QToolBar>
+#include <KConfig>
+#include <KConfigGroup>
+//#include <KDE/KGlobal>
+#include <QDialogButtonBox>
+#include <QLocale>
+#include <KLocalizedString>
 #include <QVBoxLayout>
 #include <QTreeWidget>
 #include <QHeaderView>
@@ -97,7 +99,7 @@ static QString parseDate(const QString &monthStr, const QString &dayStr, const Q
         {
             QDateTime dateTime(QDate(QDate::currentDate().year(), month, day), QTime(h, m, s));
             if (dateTime.isValid())
-                return KGlobal::locale()->formatDateTime(dateTime, KLocale::ShortDate, true);
+                return QLocale().toString(dateTime);
         }
     }
 
@@ -105,11 +107,11 @@ static QString parseDate(const QString &monthStr, const QString &dayStr, const Q
 }
 
 LogViewer::LogViewer(Kcm *p)
-         : KDialog(p)
+         : QDialog(p)
          , kcm(p)
          , headerSizesSet(false)
 {
-    setupWidgets();
+   /* setupWidgets();
     setupActions();
     refresh();
     // Can't restore QHeaderView in constructor, so use a timer - and restore after eventloop starts.
@@ -120,18 +122,19 @@ LogViewer::LogViewer(Kcm *p)
 
     if(sz.isValid())
         resize(sz);
+        */
 }
 
 LogViewer::~LogViewer()
-{
+{ /*
     KConfigGroup grp(KSharedConfig::openConfig(), CFG_GROUP);
     grp.writeEntry(CFG_LIST_STATE, list->header()->saveState());
     grp.writeEntry(CFG_SHOW_RAW, toggleRawAction->isChecked());
-    grp.writeEntry(CFG_SIZE, size());
+    grp.writeEntry(CFG_SIZE, size()); */
 }
 
 void LogViewer::restoreState()
-{
+{/*
     KConfigGroup grp(KSharedConfig::openConfig(), CFG_GROUP);
     QByteArray state=grp.readEntry(CFG_LIST_STATE, QByteArray());
     if(!state.isEmpty())
@@ -142,27 +145,28 @@ void LogViewer::restoreState()
     
     toggleRawAction->setChecked(grp.readEntry(CFG_SHOW_RAW, false));
     toggleDisplay();
+    */
 }
 
 void LogViewer::refresh()
-{
+{ /*
     QVariantMap args;
     args["lastLine"]=lastLine;
     viewAction.setArguments(args);
-    viewAction.execute();
+    viewAction.execute(); */
 }
 
 void LogViewer::toggleDisplay()
-{
+{ /*
     list->setColumnHidden(COL_DATE, toggleRawAction->isChecked());
     list->setColumnHidden(COL_ACTION, toggleRawAction->isChecked());
     list->setColumnHidden(COL_FROM, toggleRawAction->isChecked());
     list->setColumnHidden(COL_TO, toggleRawAction->isChecked());
-    list->setColumnHidden(COL_RAW, !toggleRawAction->isChecked());
+    list->setColumnHidden(COL_RAW, !toggleRawAction->isChecked()); */
 }
 
 void LogViewer::queryPerformed(ActionReply reply)
-{
+{ /*
     QStringList lines=reply.succeeded() ? reply.data()["lines"].toStringList() : QStringList();
 
     if(!lines.isEmpty())
@@ -181,18 +185,18 @@ void LogViewer::queryPerformed(ActionReply reply)
             list->header()->resizeSections(QHeaderView::ResizeToContents);
             headerSizesSet=true;
         }
-    }
+    }*/
 }
 
 void LogViewer::setupWidgets()
-{
+{ /*
     QWidget     *mainWidget=new QWidget(this);
     QVBoxLayout *layout=new QVBoxLayout(mainWidget);
-    KToolBar    *toolbar=new KToolBar(mainWidget);
-    KAction     *refreshAction=new KAction(KIcon("view-refresh"), i18n("Refresh"), this);
-    toggleRawAction=new KAction(KIcon("flag-red"), i18n("Display Raw"), this);
+    QToolBar    *toolbar=new QToolBar(mainWidget);
+    QAction     *refreshAction=new QAction( i18n("Refresh"), this);
+    toggleRawAction=new QAction( i18n("Display Raw"), this);
     toggleRawAction->setCheckable(true);
-    createRuleAction=new KAction(KIcon("list-add"), i18n("Create Rule"), this);
+    createRuleAction=new QAction( i18n("Create Rule"), this);
     connect(toggleRawAction, SIGNAL(toggled(bool)), SLOT(toggleDisplay()));
     connect(refreshAction, SIGNAL(triggered(bool)), SLOT(refresh()));
     connect(createRuleAction, SIGNAL(triggered(bool)), SLOT(createRule()));
@@ -214,25 +218,25 @@ void LogViewer::setupWidgets()
     layout->addWidget(list);
     setMainWidget(mainWidget);
     setCaption(i18n("Log Viewer"));
-    setButtons(KDialog::Close);
+   StandardButton (QDialogButtonBox::close);
     
     connect(list, SIGNAL(itemSelectionChanged()), SLOT(selectionChanged()));
-    selectionChanged();
+    selectionChanged(); */
 }
 
 void LogViewer::setupActions()
 {
-    viewAction=KAuth::Action("org.kde.ufw.viewlog");
+   /* viewAction=KAuth::Action("org.kde.ufw.viewlog");
     viewAction.setHelperID("org.kde.ufw");
 #if KDE_IS_VERSION(4, 5, 90)
     viewAction.setParentWidget(this);
 #endif
 //     queryAction.setExecutesAsync(true);
-    connect(viewAction.watcher(), SIGNAL(actionPerformed(ActionReply)), SLOT(queryPerformed(ActionReply)));
+    connect(viewAction.watcher(), SIGNAL(actionPerformed(ActionReply)), SLOT(queryPerformed(ActionReply))); */
 }
 
 void LogViewer::parse(const QString &line)
-{
+{ /*
     // Apr  6 11:42:41 kubuntu-10 kernel: [36122.101381] [UFW BLOCK] IN= OUT=eth0 SRC=1.2.3.4 DST=1.2.3.4 LEN=76 TOS=0x00 PREC=0x00 TTL=64 ID=0 DF PROTO=UDP SPT=1 DPT=1 LEN=56
     QString l(line);
     l=l.replace("[UFW ", "[UFW_");
@@ -289,16 +293,16 @@ void LogViewer::parse(const QString &line)
                                                 << action
                                                 << Rule::modify(sourceAddress, sourcePort, QString(), interfaceIn, protocol, true)
                                                 << Rule::modify(destAddress, destPort, QString(), interfaceOut, protocol, true));
-    }
+    } */
 }
 
 void LogViewer::selectionChanged()
-{
-    createRuleAction->setEnabled(1==list->selectedItems().count());
+{ /*
+    createRuleAction->setEnabled(1==list->selectedItems().count()); */
 }
 
 void LogViewer::createRule()
-{
+{ /*
     QList<QTreeWidgetItem *> items=list->selectedItems();
     QTreeWidgetItem          *item=items.count() ? items.first() : 0L;
 
@@ -345,7 +349,7 @@ void LogViewer::createRule()
         kcm->createRule(Rule(pol, interfaceOut.isEmpty(), Types::LOGGING_OFF, protocol, QString(), QString(), 
                             sourceAddress, sourcePort,  destAddress, destPort,
                             interfaceIn, interfaceOut));
-    }
+    } */
 }
 
 }

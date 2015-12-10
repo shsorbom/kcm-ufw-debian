@@ -22,10 +22,10 @@
  */
 
 #include "ruleslist.h"
-#include <KDE/KConfig>
-#include <KDE/KConfigGroup>
-#include <KDE/KGlobal>
-#include <KDE/KLocale>
+#include <KSharedConfig>
+#include <KConfigGroup>
+#include <KLocalizedString>
+//#include <KDE/KLocale>
 #include <QTimer>
 #include <QDropEvent>
 #include <QHeaderView>

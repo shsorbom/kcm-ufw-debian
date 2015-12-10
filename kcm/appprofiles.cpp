@@ -22,8 +22,10 @@
  */
 
 #include "appprofiles.h"
-#include <KDE/KConfig>
-#include <KDE/KConfigGroup>
+#include <KConfigGroup>
+#include <KConfigBase>
+#include <KConfig>
+#include <KSharedConfig>
 #include <QDir>
 
 namespace UFW

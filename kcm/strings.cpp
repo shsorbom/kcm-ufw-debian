@@ -26,7 +26,7 @@
  */
 
 #include "strings.h"
-#include <KDE/KLocale>
+#include <KLocalizedString>
 
 namespace UFW
 {

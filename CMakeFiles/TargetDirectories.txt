@@ -1,7 +1,0 @@
-/home/shawn/Projects/qt_practicum/kcm_ufw/helper/CMakeFiles/actions for org.kde.ufw.dir
-/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw.dir
-/home/shawn/Projects/qt_practicum/kcm_ufw/kcm/CMakeFiles/kcm_ufw_automoc.dir
-/home/shawn/Projects/qt_practicum/kcm_ufw/helper/CMakeFiles/kcm_ufw_helper.dir
-/home/shawn/Projects/qt_practicum/kcm_ufw/helper/CMakeFiles/kcm_ufw_helper_automoc.dir
-/home/shawn/Projects/qt_practicum/kcm_ufw/po/CMakeFiles/translations.dir
-/home/shawn/Projects/qt_practicum/kcm_ufw/CMakeFiles/uninstall.dir

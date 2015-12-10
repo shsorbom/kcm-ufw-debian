@@ -6,36 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/home/shawn/Projects/qt_practicum/kcm_ufw/helper/helper.cpp
-helper.h
 /home/shawn/Projects/qt_practicum/kcm_ufw/helper/helper.h
-config.h
-/home/shawn/Projects/qt_practicum/kcm_ufw/helper/config.h
-QtCore/QDebug
+QObject
 -
-QtCore/QByteArray
--
-QtCore/QProcess
--
-QtCore/QProcessEnvironment
--
-QtCore/QString
--
-QtCore/QStringList
--
-QtCore/QTextCodec
--
-QtCore/QDir
--
-QtCore/QFile
--
-sys/stat.h
--
-
-/home/shawn/Projects/qt_practicum/kcm_ufw/helper/helper.h
-QtCore/QObject
--
-QtCore/QVariantMap
+QVariantMap
 -
 kauth.h
 -
@@ -120,25 +94,9 @@ QtCore/QObject
 QtCore/QPair
 -
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/QByteArray
-qbytearray.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QDataStream
 qdatastream.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
-qdebug.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/QDir
-qdir.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qdir.h
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/QFile
-qfile.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QHash
 qhash.h
@@ -156,14 +114,6 @@ qobject.h
 qpair.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qpair.h
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/QProcess
-qprocess.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/QProcessEnvironment
-qprocess.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QSharedDataPointer
 qshareddata.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h
@@ -171,14 +121,6 @@ qshareddata.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
 qstring.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList
-qstringlist.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/QTextCodec
-qtextcodec.h
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qtextcodec.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
 qvariant.h
@@ -368,41 +310,7 @@ QtCore/qset.h
 QtCore/qcontiguouscache.h
 -
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qdir.h
-QtCore/qstring.h
--
-QtCore/qfileinfo.h
--
-QtCore/qstringlist.h
--
-QtCore/qshareddata.h
--
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qfeatures.h
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
-QtCore/qfiledevice.h
--
-QtCore/qstring.h
--
-stdio.h
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h
-QtCore/qiodevice.h
--
-QtCore/qstring.h
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qfileinfo.h
-QtCore/qfile.h
--
-QtCore/qlist.h
--
-QtCore/qshareddata.h
--
-QtCore/qmetatype.h
--
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
 QtCore/qglobal.h
@@ -630,14 +538,6 @@ QtCore/qglobal.h
 QtCore/qnamespace.h
 -
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h
-QtCore/qiodevice.h
--
-QtCore/qstringlist.h
--
-QtCore/qshareddata.h
--
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h
 QtCore/qglobal.h
 -
@@ -728,12 +628,6 @@ Availability.h
 AvailabilityMacros.h
 -
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qtextcodec.h
-QtCore/qstring.h
--
-QtCore/qlist.h
--
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
 QtCore/qiodevice.h
 -
@@ -821,6 +715,4 @@ algorithm
 -
 QtCore/qpoint.h
 -
-
-config.h
 

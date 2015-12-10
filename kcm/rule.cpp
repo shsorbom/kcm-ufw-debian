@@ -23,7 +23,7 @@
 
 #include "rule.h"
 #include "appprofiles.h"
-#include <KDE/KLocale>
+#include <KLocalizedString>
 #include <QMap>
 #include <QByteArray>
 #include <QTextStream>
