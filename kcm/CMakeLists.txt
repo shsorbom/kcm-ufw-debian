@@ -28,7 +28,7 @@ target_link_libraries(kcm_ufw
                       KF5::WidgetsAddons
                       )
 #install( TARGETS kcm_ufw  DESTINATION ${PLUGIN_INSTALL_DIR} )
-install( TARGETS kcm_ufw  DESTINATION ${QT_PLUGIN_INSTALL_DIR}/kf5 )
+install( TARGETS kcm_ufw  DESTINATION ${QT_PLUGIN_INSTALL_DIR} )
 
 install( FILES ufw.desktop  DESTINATION  ${SERVICES_INSTALL_DIR} )
 install( FILES ufw.ui rulewidget.ui  DESTINATION  ${KXMLGUI_INSTALL_DIR} )
