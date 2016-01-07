@@ -30,7 +30,9 @@
 #include "statusbox.h"
 //#include <KDE/KAboutData>
 #include <kauthaction.h>
-#include <kaboutdata.h>
+#include <KF5/KAuth/KAuthActionReply>
+#include <kaoutdata.h>
+#include <KF5/KCoreAddons/KAboutData>
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KPluginFactory>
@@ -1175,20 +1177,22 @@ void Kcm::setupWidgets()
 
 void Kcm::setupActions()
 {
-    //queryAction=KAuth::Action("org.kde.ufw.query");
-    //queryAction.setHelperID("org.kde.ufw");
+    queryAction=KAuth::Action("org.kde.ufw.query");
+    queryAction.setHelperId("org.kde.ufw");
 /*#if KDE_IS_VERSION(4, 5, 90)
     queryAction.setParentWidget(this);
 #endif*/
 //     queryAction.setExecutesAsync(true);
     //connect(queryAction.watcher(), SIGNAL(actionPerformed(ActionReply)), SLOT(queryPerformed(ActionReply)));
 
-    //modifyAction=KAuth::Action("org.kde.ufw.modify");
-    //modifyAction.setHelperID("org.kde.ufw");
+    modifyAction=KAuth::Action("org.kde.ufw.modify");
+    modifyAction.setHelperId("org.kde.ufw");
 /*#if KDE_IS_VERSION(4, 5, 90)
     modifyAction.setParentWidget(this);
 #endif*/
-//     modifyAction.setExecutesAsync(true);
+    //modifyAction.setExecutesAsync(true); //No ExecutesAsync call in API
+
+
     //connect(modifyAction.watcher(), SIGNAL(actionPerformed(ActionReply)), SLOT(modifyPerformed(ActionReply)));
 }
 
