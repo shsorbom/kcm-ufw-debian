@@ -52,7 +52,9 @@ To build and install:
 
 ## New Instructions (KF5)
 ``` 
-sudo cmake CMakeLists.txt -DKDE_INSTALL_USE_QT_SYS_PATHS=ON -DCMAKE_INSTALL_PREFIX:PATH=/usr
+mkdir build
+cd build
+sudo cmake ../CMakeLists.txt -DKDE_INSTALL_USE_QT_SYS_PATHS=ON -DCMAKE_INSTALL_PREFIX:PATH=/usr
 sudo make install
 kbuildsycoca5
 
@@ -74,5 +76,6 @@ The following options may be passed to CMake:
    en, es, fr, lt, and all. Entries should be separated with a semicolon
    (";") e.g. `-DUFW_TRANSLATIONS="es;fr;lt"`
    Default: all
+
 ---
 For those wishing to build against kf5, the kf5 port is on the `working_changes` branch
