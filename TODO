@@ -3,4 +3,7 @@
   - Allow multiple move and delete
 * Rule editing with ipv6 enabled
 * Better, more descriptive, error messages for add/edit dialog?
-
+* It should be possible to merge both helpers into a single KDE4 based python
+* Add ability to define cutom rule templates
+* Add abilty to NAT all rules (for routers)
+helper.
