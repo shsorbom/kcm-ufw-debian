@@ -31,7 +31,8 @@
 //#include <KDE/KAboutData>
 #include <kauthaction.h>
 #include <KF5/KAuth/KAuthActionReply>
-#include <kaoutdata.h>
+#include <KF5/KAuth/KAuthExecuteJob>
+#include <kaboutdata.h>
 #include <KF5/KCoreAddons/KAboutData>
 #include <KLocalizedString>
 #include <KMessageBox>
@@ -450,9 +451,10 @@ void Kcm::setDefaultOutgoingPolicy()
     modifyAction.execute();
 }
 
-void Kcm::queryPerformed(ActionReply reply)
+void Kcm::queryPerformed(KJob *kjob)
 {
-    QByteArray response=reply.succeeded() ? reply.data()["response"].toByteArray() : QByteArray();
+    auto job = qobject_cast<KAuth::ExecuteJob *>(kjob);
+    QByteArray response=!job->error() ? job->data()["response"].toByteArray() : QByteArray();
 
     blocker->setActive(false);
     if(!response.isEmpty())
@@ -467,8 +469,8 @@ void Kcm::queryPerformed(ActionReply reply)
 
     showCurrentStatus();
 
-    if(reply.succeeded() && reply.data().contains("profiles"))
-        refreshProfiles(reply.data()["profiles"].toMap());
+    if(!job->error() && job->data().contains("profiles"))
+        refreshProfiles(job->data()["profiles"].toMap());
 }
 
 void Kcm::modifyPerformed(ActionReply reply)
@@ -484,7 +486,7 @@ void Kcm::modifyPerformed(ActionReply reply)
             QAction *currentProfile=getCurrentProfile();
             loadedProfile=currentProfile ? profileName(currentProfile) : 0L;
         }
-        queryPerformed(reply);
+        // queryPerformed(reply);
         moveToPos=0;
 
         if("saveProfile"==cmd || "deleteProfile"==cmd)
@@ -1184,6 +1186,10 @@ void Kcm::setupActions()
 #endif*/
 //     queryAction.setExecutesAsync(true);
     //connect(queryAction.watcher(), SIGNAL(actionPerformed(ActionReply)), SLOT(queryPerformed(ActionReply)));
+
+    KAuth::ExecuteJob *job = queryAction.execute();
+    connect(job, &KAuth::ExecuteJob::result, this, &Kcm::queryPerformed);
+    job->start();
 
     modifyAction=KAuth::Action("org.kde.ufw.modify");
     modifyAction.setHelperId("org.kde.ufw");

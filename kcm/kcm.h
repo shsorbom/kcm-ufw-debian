@@ -83,7 +83,7 @@ class Kcm : public KCModule, public Ui::Ufw
     void          setLogLevel();
     void          setDefaultIncomingPolicy();
     void          setDefaultOutgoingPolicy();
-    void          queryPerformed(ActionReply reply);
+    void          queryPerformed(KJob *job);
     void          modifyPerformed(ActionReply reply);
     void          ruleSelectionChanged();
     void          ruleDoubleClicked(QTreeWidgetItem *item , int col);
